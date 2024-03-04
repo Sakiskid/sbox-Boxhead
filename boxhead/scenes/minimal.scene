@@ -331,7 +331,7 @@
                   "_type": "Sandbox.Game/Sandbox.GameObject"
                 },
                 "UserData": {
-                  "Position": "752,-496"
+                  "Position": "496,-496"
                 }
               },
               {
@@ -342,7 +342,7 @@
                   "_type": "Sandbox.Game/Sandbox.GameTransform"
                 },
                 "UserData": {
-                  "Position": "928,-496"
+                  "Position": "672,-496"
                 }
               },
               {
@@ -368,8 +368,8 @@
                 "Type": "property.get",
                 "ParentId": 31,
                 "Properties": {
-                  "_name": "Forward",
-                  "_type": "Sandbox.System/Rotation"
+                  "_type": "Sandbox.System/Rotation",
+                  "_name": "Forward"
                 }
               },
               {
@@ -411,24 +411,67 @@
                 }
               },
               {
-                "Id": 60,
-                "Type": "property.set",
-                "Properties": {
-                  "_name": "inputDir",
-                  "_type": "package.local.boxhead/PlayerPhysics"
-                },
-                "UserData": {
-                  "Position": "1104,-160"
-                }
-              },
-              {
                 "Id": 61,
                 "Type": "scene.get",
                 "Properties": {
                   "T": "package.local.boxhead/PlayerPhysics"
                 },
                 "UserData": {
-                  "Position": "1008,-352"
+                  "Position": "720,-272"
+                }
+              },
+              {
+                "Id": 62,
+                "Type": "property.set",
+                "Properties": {
+                  "_type": "package.local.boxhead/PlayerPhysics",
+                  "_name": "inputDir"
+                },
+                "UserData": {
+                  "Position": "1120,-160"
+                }
+              },
+              {
+                "Id": 63,
+                "Type": "nop",
+                "UserData": {
+                  "Position": "992,-224"
+                }
+              },
+              {
+                "Id": 64,
+                "Type": "nop",
+                "UserData": {
+                  "Position": "992,-128"
+                }
+              },
+              {
+                "Id": 65,
+                "Type": "property.set",
+                "Properties": {
+                  "_type": "package.local.boxhead/PlayerPhysics",
+                  "_name": "inputDir"
+                },
+                "UserData": {
+                  "Position": "1120,-64"
+                }
+              },
+              {
+                "Id": 66,
+                "Type": "nop",
+                "UserData": {
+                  "Position": "992,-32"
+                }
+              },
+              {
+                "Id": 69,
+                "Type": "property.get",
+                "Properties": {
+                  "_type": "package.local.boxhead/PlayerPhysics",
+                  "_name": "inputDir"
+                },
+                "UserData": {
+                  "Position": "944,-512"
                 }
               }
             ],
@@ -461,6 +504,12 @@
                 "Value": "Forward",
                 "DstId": 17,
                 "DstName": "action"
+              },
+              {
+                "SrcId": 6,
+                "SrcName": "_signal",
+                "DstId": 18,
+                "DstName": "_signal"
               },
               {
                 "SrcId": 53,
@@ -576,7 +625,7 @@
                 "DstName": "a"
               },
               {
-                "SrcId": 43,
+                "SrcId": 69,
                 "SrcName": "_result",
                 "DstId": 50,
                 "DstName": "b"
@@ -590,13 +639,59 @@
               {
                 "SrcId": 19,
                 "SrcName": "true",
-                "DstId": 60,
+                "DstId": 62,
                 "DstName": "_signal"
+              },
+              {
+                "SrcId": 64,
+                "SrcName": "out",
+                "DstId": 62,
+                "DstName": "_target"
+              },
+              {
+                "Value": "1,0,0",
+                "DstId": 62,
+                "DstName": "_value"
               },
               {
                 "SrcId": 61,
                 "SrcName": "_result",
-                "DstId": 60,
+                "DstId": 63,
+                "DstName": "in"
+              },
+              {
+                "SrcId": 63,
+                "SrcName": "out",
+                "DstId": 64,
+                "DstName": "in"
+              },
+              {
+                "SrcId": 27,
+                "SrcName": "true",
+                "DstId": 65,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 66,
+                "SrcName": "out",
+                "DstId": 65,
+                "DstName": "_target"
+              },
+              {
+                "Value": "-1,0,0",
+                "DstId": 65,
+                "DstName": "_value"
+              },
+              {
+                "SrcId": 64,
+                "SrcName": "out",
+                "DstId": 66,
+                "DstName": "in"
+              },
+              {
+                "SrcId": 61,
+                "SrcName": "_result",
+                "DstId": 69,
                 "DstName": "_target"
               }
             ]
@@ -616,13 +711,7 @@
           "__type": "PlayerPhysics",
           "friction": 1,
           "inputDir": "0,0,0",
-          "moveSpeed": 10
-        },
-        {
-          "__type": "PlayerPhysics",
-          "friction": 0,
-          "inputDir": "0,0,0",
-          "moveSpeed": 0
+          "moveSpeed": 100
         }
       ]
     },
@@ -714,6 +803,6 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-03-04T10:08:09.9015243-06:00",
+  "LastSaved": "2024-03-04T10:12:01.1169637-06:00",
   "__references": []
 }
