@@ -151,7 +151,7 @@
     {
       "Id": "523e3e8f-a4ec-4ec1-af9a-d86ffc9c17e1",
       "Name": "Player",
-      "Position": "40.81348,46.97572,175.5562",
+      "Position": "40.81348,46.97572,32",
       "Rotation": "0.00000001819328,-0.00000000000000008235059,0.3052325,0.952278",
       "Scale": "0.5632889,0.5632889,0.5632889",
       "Enabled": true,
@@ -176,7 +176,7 @@
         {
           "__type": "Rigidbody",
           "AngularDamping": 0,
-          "Gravity": true,
+          "Gravity": false,
           "LinearDamping": 0.5,
           "Locking": {},
           "MassOverride": 0,
@@ -187,17 +187,17 @@
           "__type": "CharacterController",
           "Acceleration": 10,
           "Bounciness": 0.3,
-          "GroundAngle": 45,
-          "Height": 64,
+          "GroundAngle": 48.96,
+          "Height": 55.09,
           "IgnoreLayers": "",
-          "Radius": 16,
-          "StepHeight": 18
+          "Radius": 47.69,
+          "StepHeight": 15.39
         },
         {
           "__type": "PlayerPhysics",
           "friction": 1,
           "inputDir": "0,0,0",
-          "moveSpeed": 100
+          "moveSpeed": 1000
         }
       ]
     },
@@ -264,6 +264,23 @@
           "Scale": 0.3
         }
       ]
+    },
+    {
+      "Id": "f76893e6-277e-4785-830c-e13e3f63db8b",
+      "Name": "Cube",
+      "Position": "131.7648,-133.948,64",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -289,6 +306,6 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-03-04T11:32:25.9562844-06:00",
+  "LastSaved": "2024-03-04T12:54:52.48024-06:00",
   "__references": []
 }
