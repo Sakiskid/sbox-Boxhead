@@ -195,13 +195,22 @@
                 "package.local.boxhead/PlayerPhysics"
               ]
             },
-            "Variables": [],
+            "Variables": [
+              {
+                "Name": "characterController",
+                "Type": "Sandbox.Game/Sandbox.CharacterController"
+              },
+              {
+                "Name": "playerPhysics",
+                "Type": "package.local.boxhead/PlayerPhysics"
+              }
+            ],
             "Nodes": [
               {
                 "Id": 0,
                 "Type": "input",
                 "UserData": {
-                  "Position": "-240,-288"
+                  "Position": "-1024,-656"
                 }
               },
               {
@@ -253,13 +262,6 @@
                 }
               },
               {
-                "Id": 19,
-                "Type": "if",
-                "UserData": {
-                  "Position": "832,-160"
-                }
-              },
-              {
                 "Id": 20,
                 "Type": "property.get",
                 "Properties": {
@@ -289,7 +291,7 @@
                   "T": "Sandbox.Game/Sandbox.CharacterController"
                 },
                 "UserData": {
-                  "Position": "208,-896"
+                  "Position": "208,-1008"
                 }
               },
               {
@@ -317,13 +319,6 @@
                 }
               },
               {
-                "Id": 27,
-                "Type": "if",
-                "UserData": {
-                  "Position": "832,-64"
-                }
-              },
-              {
                 "Id": 29,
                 "Type": "property.get",
                 "Properties": {
@@ -331,7 +326,7 @@
                   "_name": "Transform"
                 },
                 "UserData": {
-                  "Position": "496,-496"
+                  "Position": "352,-480"
                 }
               },
               {
@@ -342,7 +337,7 @@
                   "_name": "Rotation"
                 },
                 "UserData": {
-                  "Position": "672,-496"
+                  "Position": "528,-480"
                 }
               },
               {
@@ -391,36 +386,6 @@
                 }
               },
               {
-                "Id": 52,
-                "Type": "scene.get",
-                "Properties": {
-                  "T": "package.local.boxhead/PlayerPhysics"
-                },
-                "UserData": {
-                  "Position": "688,-592"
-                }
-              },
-              {
-                "Id": 53,
-                "Type": "scene.get",
-                "Properties": {
-                  "T": "Sandbox.Game/Sandbox.CharacterController"
-                },
-                "UserData": {
-                  "Position": "1664,-400"
-                }
-              },
-              {
-                "Id": 61,
-                "Type": "scene.get",
-                "Properties": {
-                  "T": "package.local.boxhead/PlayerPhysics"
-                },
-                "UserData": {
-                  "Position": "720,-272"
-                }
-              },
-              {
                 "Id": 62,
                 "Type": "property.set",
                 "Properties": {
@@ -428,7 +393,7 @@
                   "_name": "inputDir"
                 },
                 "UserData": {
-                  "Position": "1600,-128"
+                  "Position": "1568,-144"
                 }
               },
               {
@@ -443,31 +408,10 @@
                 }
               },
               {
-                "Id": 72,
-                "Type": "op.multiply",
-                "UserData": {
-                  "Position": "1040,-144"
-                }
-              },
-              {
                 "Id": 73,
                 "Type": "vec3.new",
                 "UserData": {
-                  "Position": "1312,-0"
-                }
-              },
-              {
-                "Id": 74,
-                "Type": "op.multiply",
-                "UserData": {
-                  "Position": "1040,-48"
-                }
-              },
-              {
-                "Id": 75,
-                "Type": "op.add",
-                "UserData": {
-                  "Position": "1168,-96"
+                  "Position": "1344,-16"
                 }
               },
               {
@@ -478,24 +422,10 @@
                 }
               },
               {
-                "Id": 77,
-                "Type": "if",
-                "UserData": {
-                  "Position": "832,32"
-                }
-              },
-              {
                 "Id": 78,
                 "Type": "input.down",
                 "UserData": {
                   "Position": "480,128"
-                }
-              },
-              {
-                "Id": 79,
-                "Type": "if",
-                "UserData": {
-                  "Position": "832,128"
                 }
               },
               {
@@ -513,37 +443,145 @@
                 }
               },
               {
-                "Id": 82,
-                "Type": "op.multiply",
+                "Id": 87,
+                "Type": "sakiskid.acutils.boolToInt",
                 "UserData": {
-                  "Position": "1040,32"
+                  "Position": "880,-160"
                 }
               },
               {
-                "Id": 83,
-                "Type": "op.multiply",
+                "Id": 90,
+                "Type": "sakiskid.acutils.boolToInt",
                 "UserData": {
-                  "Position": "1040,128"
+                  "Position": "880,-64"
                 }
               },
               {
-                "Id": 84,
+                "Id": 91,
+                "Type": "sakiskid.acutils.boolToInt",
+                "UserData": {
+                  "Position": "880,32"
+                }
+              },
+              {
+                "Id": 92,
+                "Type": "sakiskid.acutils.boolToInt",
+                "UserData": {
+                  "Position": "880,128"
+                }
+              },
+              {
+                "Id": 93,
                 "Type": "op.add",
                 "UserData": {
-                  "Position": "1168,80"
+                  "Position": "1152,-96"
                 }
               },
               {
-                "Id": 85,
-                "Type": "nop",
+                "Id": 94,
+                "Type": "op.add",
                 "UserData": {
-                  "Position": "1536,-224"
+                  "Position": "1136,96"
+                }
+              },
+              {
+                "Id": 95,
+                "Type": "scene.get",
+                "Properties": {
+                  "T": "Sandbox.Game/Sandbox.CharacterController"
+                },
+                "UserData": {
+                  "Position": "-112,-1040"
+                }
+              },
+              {
+                "Id": 117,
+                "Type": "scene.get",
+                "Properties": {
+                  "T": "Sandbox.Game/Sandbox.CharacterController"
+                },
+                "UserData": {
+                  "Position": "-880,-448"
+                }
+              },
+              {
+                "Id": 118,
+                "Type": "var.set",
+                "Properties": {
+                  "_var": "characterController"
+                },
+                "UserData": {
+                  "Position": "-640,-448"
+                }
+              },
+              {
+                "Id": 119,
+                "Type": "all",
+                "UserData": {
+                  "Position": "-368,-656"
+                }
+              },
+              {
+                "Id": 120,
+                "Type": "all",
+                "UserData": {
+                  "Position": "-864,-656"
+                }
+              },
+              {
+                "Id": 121,
+                "Type": "comment",
+                "UserData": {
+                  "Position": "-912,-512",
+                  "Size": "484,288",
+                  "Title": "Init vars",
+                  "Layer": 1
+                }
+              },
+              {
+                "Id": 126,
+                "Type": "scene.get",
+                "Properties": {
+                  "T": "package.local.boxhead/PlayerPhysics"
+                },
+                "UserData": {
+                  "Position": "-832,-352"
+                }
+              },
+              {
+                "Id": 127,
+                "Type": "var.set",
+                "Properties": {
+                  "_var": "playerPhysics"
+                },
+                "UserData": {
+                  "Position": "-640,-352"
+                }
+              },
+              {
+                "Id": 129,
+                "Type": "var.get",
+                "Properties": {
+                  "_var": "playerPhysics"
+                },
+                "UserData": {
+                  "Position": "736,-544"
+                }
+              },
+              {
+                "Id": 130,
+                "Type": "var.get",
+                "Properties": {
+                  "_var": "characterController"
+                },
+                "UserData": {
+                  "Position": "1680,-400"
                 }
               }
             ],
             "Links": [
               {
-                "SrcId": 0,
+                "SrcId": 119,
                 "SrcName": "_signal",
                 "DstId": 6,
                 "DstName": "_signal"
@@ -578,7 +616,7 @@
                 "DstName": "_signal"
               },
               {
-                "SrcId": 53,
+                "SrcId": 130,
                 "SrcName": "_result",
                 "DstId": 18,
                 "DstName": "_target"
@@ -588,18 +626,6 @@
                 "SrcName": "_result",
                 "DstId": 18,
                 "DstName": "vector"
-              },
-              {
-                "SrcId": 80,
-                "SrcName": "out",
-                "DstId": 19,
-                "DstName": "_signal"
-              },
-              {
-                "SrcId": 17,
-                "SrcName": "_result",
-                "DstId": 19,
-                "DstName": "condition"
               },
               {
                 "SrcId": 25,
@@ -614,8 +640,7 @@
                 "DstName": "_signal"
               },
               {
-                "SrcId": 22,
-                "SrcName": "_result",
+                "VarName": "characterController",
                 "DstId": 21,
                 "DstName": "_target"
               },
@@ -626,7 +651,7 @@
                 "DstName": "frictionAmount"
               },
               {
-                "SrcId": 0,
+                "SrcId": 119,
                 "SrcName": "_signal",
                 "DstId": 23,
                 "DstName": "_signal"
@@ -641,18 +666,6 @@
                 "Value": "Backward",
                 "DstId": 26,
                 "DstName": "action"
-              },
-              {
-                "SrcId": 80,
-                "SrcName": "out",
-                "DstId": 27,
-                "DstName": "_signal"
-              },
-              {
-                "SrcId": 26,
-                "SrcName": "_result",
-                "DstId": 27,
-                "DstName": "condition"
               },
               {
                 "SrcId": 0,
@@ -697,14 +710,13 @@
                 "DstName": "b"
               },
               {
-                "SrcId": 52,
+                "SrcId": 129,
                 "SrcName": "_result",
                 "DstId": 51,
                 "DstName": "_target"
               },
               {
-                "SrcId": 85,
-                "SrcName": "out",
+                "VarName": "playerPhysics",
                 "DstId": 62,
                 "DstName": "_target"
               },
@@ -715,90 +727,37 @@
                 "DstName": "_value"
               },
               {
-                "SrcId": 61,
+                "SrcId": 129,
                 "SrcName": "_result",
                 "DstId": 69,
                 "DstName": "_target"
               },
               {
-                "SrcId": 19,
-                "SrcName": "true",
-                "DstId": 72,
-                "DstName": "a"
-              },
-              {
-                "Value": 1,
-                "DstId": 72,
-                "DstName": "b"
-              },
-              {
-                "SrcId": 75,
+                "SrcId": 93,
                 "SrcName": "_result",
                 "DstId": 73,
                 "DstName": "x"
               },
               {
-                "SrcId": 84,
+                "SrcId": 94,
                 "SrcName": "_result",
                 "DstId": 73,
                 "DstName": "y"
               },
               {
-                "SrcId": 27,
-                "SrcName": "true",
-                "DstId": 74,
-                "DstName": "a"
+                "Value": 0,
+                "DstId": 73,
+                "DstName": "z"
               },
               {
-                "Value": -1,
-                "DstId": 74,
-                "DstName": "b"
-              },
-              {
-                "SrcId": 72,
-                "SrcName": "_result",
-                "DstId": 75,
-                "DstName": "a"
-              },
-              {
-                "SrcId": 74,
-                "SrcName": "_result",
-                "DstId": 75,
-                "DstName": "b"
-              },
-              {
-                "Value": "Forward",
+                "Value": "Left",
                 "DstId": 76,
                 "DstName": "action"
               },
               {
-                "SrcId": 80,
-                "SrcName": "out",
-                "DstId": 77,
-                "DstName": "_signal"
-              },
-              {
-                "SrcId": 76,
-                "SrcName": "_result",
-                "DstId": 77,
-                "DstName": "condition"
-              },
-              {
-                "Value": "Backward",
+                "Value": "Right",
                 "DstId": 78,
                 "DstName": "action"
-              },
-              {
-                "SrcId": 80,
-                "SrcName": "out",
-                "DstId": 79,
-                "DstName": "_signal"
-              },
-              {
-                "SrcId": 78,
-                "SrcName": "_result",
-                "DstId": 79,
-                "DstName": "condition"
               },
               {
                 "SrcId": 81,
@@ -813,44 +772,130 @@
                 "DstName": "in"
               },
               {
-                "SrcId": 77,
-                "SrcName": "true",
-                "DstId": 82,
+                "SrcId": 80,
+                "SrcName": "out",
+                "DstId": 87,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 17,
+                "SrcName": "_result",
+                "DstId": 87,
+                "DstName": "boolean"
+              },
+              {
+                "SrcId": 80,
+                "SrcName": "out",
+                "DstId": 90,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 26,
+                "SrcName": "_result",
+                "DstId": 90,
+                "DstName": "boolean"
+              },
+              {
+                "SrcId": 80,
+                "SrcName": "out",
+                "DstId": 91,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 76,
+                "SrcName": "_result",
+                "DstId": 91,
+                "DstName": "boolean"
+              },
+              {
+                "SrcId": 80,
+                "SrcName": "out",
+                "DstId": 92,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 78,
+                "SrcName": "_result",
+                "DstId": 92,
+                "DstName": "boolean"
+              },
+              {
+                "SrcId": 87,
+                "SrcName": "_result",
+                "DstId": 93,
                 "DstName": "a"
               },
               {
-                "Value": 1,
-                "DstId": 82,
+                "SrcId": 90,
+                "SrcName": "_result",
+                "DstId": 93,
                 "DstName": "b"
               },
               {
-                "SrcId": 79,
-                "SrcName": "true",
-                "DstId": 83,
+                "SrcId": 91,
+                "SrcName": "_result",
+                "DstId": 94,
                 "DstName": "a"
               },
               {
-                "Value": -1,
-                "DstId": 83,
+                "SrcId": 92,
+                "SrcName": "_result",
+                "DstId": 94,
                 "DstName": "b"
               },
               {
-                "SrcId": 82,
-                "SrcName": "_result",
-                "DstId": 84,
-                "DstName": "a"
+                "SrcId": 0,
+                "SrcName": "_target",
+                "DstId": 95,
+                "DstName": "_this"
               },
               {
-                "SrcId": 83,
-                "SrcName": "_result",
-                "DstId": 84,
-                "DstName": "b"
+                "SrcId": 0,
+                "SrcName": "_target",
+                "DstId": 117,
+                "DstName": "_this"
               },
               {
-                "SrcId": 61,
+                "SrcId": 120,
+                "SrcName": "body",
+                "DstId": 118,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 117,
                 "SrcName": "_result",
-                "DstId": 85,
-                "DstName": "in"
+                "DstId": 118,
+                "DstName": "_value"
+              },
+              {
+                "SrcId": 120,
+                "SrcName": "_signal",
+                "DstId": 119,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 0,
+                "SrcName": "_signal",
+                "DstId": 120,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 0,
+                "SrcName": "_target",
+                "DstId": 126,
+                "DstName": "_this"
+              },
+              {
+                "SrcId": 120,
+                "SrcName": "body",
+                "DstId": 127,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 126,
+                "SrcName": "_result",
+                "DstId": 127,
+                "DstName": "_value"
               }
             ]
           }
@@ -961,6 +1006,6 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-03-04T10:23:14.6273657-06:00",
+  "LastSaved": "2024-03-04T11:22:43.8010741-06:00",
   "__references": []
 }
