@@ -20,13 +20,18 @@ public sealed class PlayerPhysics : Component
 	protected override void OnFixedUpdate()
 	{
 		base.OnFixedUpdate();
-		
+
+		Move();
+		FaceDirection();
+	}
+
+	private void Move()
+	{
 		Vector3 finalVelocity = Vector3.Zero;
-		
-		MathF
-		
+
 		// Input Direction
-		finalVelocity += Input.AnalogMove * moveSpeed;
+		inputDir = Input.AnalogMove;
+		inputDir.z = 0;
 
 		// Add speed to direction
 		finalVelocity += inputDir * moveSpeed;
@@ -40,5 +45,11 @@ public sealed class PlayerPhysics : Component
 		// Apply velocity and move
 		charCont.Velocity = finalVelocity;
 		charCont.Move();
+	}
+
+	private void FaceDirection()
+	{
+		if ( inputDir == Vector3.Zero ) return;
+		GameObject.Transform.Rotation = Rotation.LookAt(inputDir, Vector3.Up);
 	}
 }

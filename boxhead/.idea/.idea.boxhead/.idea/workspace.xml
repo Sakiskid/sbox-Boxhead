@@ -32,6 +32,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cd3380a0f9f04a0090b2fab86df026ca133800/70/d28d216e/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8c949c16adf34049888a318cb1262de75e200/5b/a787574d/ActionGraphNodeAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8c949c16adf34049888a318cb1262de75e200/a8/9c69b290/Rotation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cd3380a0f9f04a0090b2fab86df026ca133800/2c/daba29d2/GameTransform.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2dEEkDQCTdChGiXzr2KE6EybsSO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -130,7 +132,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709564979539</updated>
-      <workItem from="1709564984507" duration="8218000" />
+      <workItem from="1709564984507" duration="11216000" />
     </task>
     <servers />
   </component>
