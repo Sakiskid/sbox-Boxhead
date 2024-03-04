@@ -215,12 +215,12 @@
                 "Id": 7,
                 "Type": "call",
                 "Properties": {
-                  "_name": "Move",
+                  "_type": "Sandbox.Game/Sandbox.CharacterController",
                   "_isStatic": false,
-                  "_type": "Sandbox.Game/Sandbox.CharacterController"
+                  "_name": "Move"
                 },
                 "UserData": {
-                  "Position": "272,80"
+                  "Position": "-80,336"
                 }
               },
               {
@@ -230,14 +230,14 @@
                   "T": "Sandbox.Game/Sandbox.CharacterController"
                 },
                 "UserData": {
-                  "Position": "-16,80"
+                  "Position": "-368,336"
                 }
               },
               {
                 "Id": 17,
                 "Type": "input.down",
                 "UserData": {
-                  "Position": "608,-160"
+                  "Position": "480,-160"
                 }
               },
               {
@@ -263,8 +263,8 @@
                 "Id": 20,
                 "Type": "property.get",
                 "Properties": {
-                  "_name": "friction",
-                  "_type": "package.local.boxhead/PlayerPhysics"
+                  "_type": "package.local.boxhead/PlayerPhysics",
+                  "_name": "friction"
                 },
                 "UserData": {
                   "Position": "272,-832"
@@ -274,9 +274,9 @@
                 "Id": 21,
                 "Type": "call",
                 "Properties": {
-                  "_name": "ApplyFriction",
+                  "_type": "Sandbox.Game/Sandbox.CharacterController",
                   "_isStatic": false,
-                  "_type": "Sandbox.Game/Sandbox.CharacterController"
+                  "_name": "ApplyFriction"
                 },
                 "UserData": {
                   "Position": "544,-880"
@@ -313,7 +313,7 @@
                 "Id": 26,
                 "Type": "input.down",
                 "UserData": {
-                  "Position": "608,-64"
+                  "Position": "480,-64"
                 }
               },
               {
@@ -327,8 +327,8 @@
                 "Id": 29,
                 "Type": "property.get",
                 "Properties": {
-                  "_name": "Transform",
-                  "_type": "Sandbox.Game/Sandbox.GameObject"
+                  "_type": "Sandbox.Game/Sandbox.GameObject",
+                  "_name": "Transform"
                 },
                 "UserData": {
                   "Position": "496,-496"
@@ -338,8 +338,8 @@
                 "Id": 31,
                 "Type": "property.get",
                 "Properties": {
-                  "_name": "Rotation",
-                  "_type": "Sandbox.Game/Sandbox.GameTransform"
+                  "_type": "Sandbox.Game/Sandbox.GameTransform",
+                  "_name": "Rotation"
                 },
                 "UserData": {
                   "Position": "672,-496"
@@ -350,8 +350,8 @@
                 "Type": "property.get",
                 "ParentId": 31,
                 "Properties": {
-                  "_name": "Up",
-                  "_type": "Sandbox.System/Rotation"
+                  "_type": "Sandbox.System/Rotation",
+                  "_name": "Up"
                 }
               },
               {
@@ -359,8 +359,8 @@
                 "Type": "property.get",
                 "ParentId": 31,
                 "Properties": {
-                  "_name": "Right",
-                  "_type": "Sandbox.System/Rotation"
+                  "_type": "Sandbox.System/Rotation",
+                  "_name": "Right"
                 }
               },
               {
@@ -383,8 +383,8 @@
                 "Id": 51,
                 "Type": "property.get",
                 "Properties": {
-                  "_name": "moveSpeed",
-                  "_type": "package.local.boxhead/PlayerPhysics"
+                  "_type": "package.local.boxhead/PlayerPhysics",
+                  "_name": "moveSpeed"
                 },
                 "UserData": {
                   "Position": "928,-592"
@@ -428,39 +428,7 @@
                   "_name": "inputDir"
                 },
                 "UserData": {
-                  "Position": "1120,-160"
-                }
-              },
-              {
-                "Id": 63,
-                "Type": "nop",
-                "UserData": {
-                  "Position": "992,-224"
-                }
-              },
-              {
-                "Id": 64,
-                "Type": "nop",
-                "UserData": {
-                  "Position": "992,-128"
-                }
-              },
-              {
-                "Id": 65,
-                "Type": "property.set",
-                "Properties": {
-                  "_type": "package.local.boxhead/PlayerPhysics",
-                  "_name": "inputDir"
-                },
-                "UserData": {
-                  "Position": "1120,-64"
-                }
-              },
-              {
-                "Id": 66,
-                "Type": "nop",
-                "UserData": {
-                  "Position": "992,-32"
+                  "Position": "1600,-128"
                 }
               },
               {
@@ -472,6 +440,104 @@
                 },
                 "UserData": {
                   "Position": "944,-512"
+                }
+              },
+              {
+                "Id": 72,
+                "Type": "op.multiply",
+                "UserData": {
+                  "Position": "1040,-144"
+                }
+              },
+              {
+                "Id": 73,
+                "Type": "vec3.new",
+                "UserData": {
+                  "Position": "1312,-0"
+                }
+              },
+              {
+                "Id": 74,
+                "Type": "op.multiply",
+                "UserData": {
+                  "Position": "1040,-48"
+                }
+              },
+              {
+                "Id": 75,
+                "Type": "op.add",
+                "UserData": {
+                  "Position": "1168,-96"
+                }
+              },
+              {
+                "Id": 76,
+                "Type": "input.down",
+                "UserData": {
+                  "Position": "480,32"
+                }
+              },
+              {
+                "Id": 77,
+                "Type": "if",
+                "UserData": {
+                  "Position": "832,32"
+                }
+              },
+              {
+                "Id": 78,
+                "Type": "input.down",
+                "UserData": {
+                  "Position": "480,128"
+                }
+              },
+              {
+                "Id": 79,
+                "Type": "if",
+                "UserData": {
+                  "Position": "832,128"
+                }
+              },
+              {
+                "Id": 80,
+                "Type": "nop",
+                "UserData": {
+                  "Position": "800,32"
+                }
+              },
+              {
+                "Id": 81,
+                "Type": "nop",
+                "UserData": {
+                  "Position": "384,32"
+                }
+              },
+              {
+                "Id": 82,
+                "Type": "op.multiply",
+                "UserData": {
+                  "Position": "1040,32"
+                }
+              },
+              {
+                "Id": 83,
+                "Type": "op.multiply",
+                "UserData": {
+                  "Position": "1040,128"
+                }
+              },
+              {
+                "Id": 84,
+                "Type": "op.add",
+                "UserData": {
+                  "Position": "1168,80"
+                }
+              },
+              {
+                "Id": 85,
+                "Type": "nop",
+                "UserData": {
+                  "Position": "1536,-224"
                 }
               }
             ],
@@ -524,8 +590,8 @@
                 "DstName": "vector"
               },
               {
-                "SrcId": 6,
-                "SrcName": "_signal",
+                "SrcId": 80,
+                "SrcName": "out",
                 "DstId": 19,
                 "DstName": "_signal"
               },
@@ -577,8 +643,8 @@
                 "DstName": "action"
               },
               {
-                "SrcId": 6,
-                "SrcName": "_signal",
+                "SrcId": 80,
+                "SrcName": "out",
                 "DstId": 27,
                 "DstName": "_signal"
               },
@@ -637,62 +703,154 @@
                 "DstName": "_target"
               },
               {
-                "SrcId": 19,
-                "SrcName": "true",
-                "DstId": 62,
-                "DstName": "_signal"
-              },
-              {
-                "SrcId": 64,
+                "SrcId": 85,
                 "SrcName": "out",
                 "DstId": 62,
                 "DstName": "_target"
               },
               {
-                "Value": "1,0,0",
-                "DstId": 62,
-                "DstName": "_value"
-              },
-              {
-                "SrcId": 61,
+                "SrcId": 73,
                 "SrcName": "_result",
-                "DstId": 63,
-                "DstName": "in"
-              },
-              {
-                "SrcId": 63,
-                "SrcName": "out",
-                "DstId": 64,
-                "DstName": "in"
-              },
-              {
-                "SrcId": 27,
-                "SrcName": "true",
-                "DstId": 65,
-                "DstName": "_signal"
-              },
-              {
-                "SrcId": 66,
-                "SrcName": "out",
-                "DstId": 65,
-                "DstName": "_target"
-              },
-              {
-                "Value": "-1,0,0",
-                "DstId": 65,
+                "DstId": 62,
                 "DstName": "_value"
-              },
-              {
-                "SrcId": 64,
-                "SrcName": "out",
-                "DstId": 66,
-                "DstName": "in"
               },
               {
                 "SrcId": 61,
                 "SrcName": "_result",
                 "DstId": 69,
                 "DstName": "_target"
+              },
+              {
+                "SrcId": 19,
+                "SrcName": "true",
+                "DstId": 72,
+                "DstName": "a"
+              },
+              {
+                "Value": 1,
+                "DstId": 72,
+                "DstName": "b"
+              },
+              {
+                "SrcId": 75,
+                "SrcName": "_result",
+                "DstId": 73,
+                "DstName": "x"
+              },
+              {
+                "SrcId": 84,
+                "SrcName": "_result",
+                "DstId": 73,
+                "DstName": "y"
+              },
+              {
+                "SrcId": 27,
+                "SrcName": "true",
+                "DstId": 74,
+                "DstName": "a"
+              },
+              {
+                "Value": -1,
+                "DstId": 74,
+                "DstName": "b"
+              },
+              {
+                "SrcId": 72,
+                "SrcName": "_result",
+                "DstId": 75,
+                "DstName": "a"
+              },
+              {
+                "SrcId": 74,
+                "SrcName": "_result",
+                "DstId": 75,
+                "DstName": "b"
+              },
+              {
+                "Value": "Forward",
+                "DstId": 76,
+                "DstName": "action"
+              },
+              {
+                "SrcId": 80,
+                "SrcName": "out",
+                "DstId": 77,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 76,
+                "SrcName": "_result",
+                "DstId": 77,
+                "DstName": "condition"
+              },
+              {
+                "Value": "Backward",
+                "DstId": 78,
+                "DstName": "action"
+              },
+              {
+                "SrcId": 80,
+                "SrcName": "out",
+                "DstId": 79,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 78,
+                "SrcName": "_result",
+                "DstId": 79,
+                "DstName": "condition"
+              },
+              {
+                "SrcId": 81,
+                "SrcName": "out",
+                "DstId": 80,
+                "DstName": "in"
+              },
+              {
+                "SrcId": 6,
+                "SrcName": "_signal",
+                "DstId": 81,
+                "DstName": "in"
+              },
+              {
+                "SrcId": 77,
+                "SrcName": "true",
+                "DstId": 82,
+                "DstName": "a"
+              },
+              {
+                "Value": 1,
+                "DstId": 82,
+                "DstName": "b"
+              },
+              {
+                "SrcId": 79,
+                "SrcName": "true",
+                "DstId": 83,
+                "DstName": "a"
+              },
+              {
+                "Value": -1,
+                "DstId": 83,
+                "DstName": "b"
+              },
+              {
+                "SrcId": 82,
+                "SrcName": "_result",
+                "DstId": 84,
+                "DstName": "a"
+              },
+              {
+                "SrcId": 83,
+                "SrcName": "_result",
+                "DstId": 84,
+                "DstName": "b"
+              },
+              {
+                "SrcId": 61,
+                "SrcName": "_result",
+                "DstId": 85,
+                "DstName": "in"
               }
             ]
           }
@@ -803,6 +961,6 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-03-04T10:12:01.1169637-06:00",
+  "LastSaved": "2024-03-04T10:23:14.6273657-06:00",
   "__references": []
 }
