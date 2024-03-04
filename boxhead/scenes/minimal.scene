@@ -150,7 +150,7 @@
     },
     {
       "Id": "523e3e8f-a4ec-4ec1-af9a-d86ffc9c17e1",
-      "Name": "Cube (1)",
+      "Name": "Player",
       "Position": "40.81348,46.97572,175.5562",
       "Rotation": "0.00000001819328,-0.00000000000000008235059,0.3052325,0.952278",
       "Scale": "0.5632889,0.5632889,0.5632889",
@@ -191,7 +191,8 @@
               "Title": "Updateaaa",
               "id": "ef24df7c-a135-423b-bd97-29f278cbd37b",
               "ReferencedComponentTypes": [
-                "Sandbox.Game/Sandbox.CharacterController"
+                "Sandbox.Game/Sandbox.CharacterController",
+                "package.local.boxhead/PlayerPhysics"
               ]
             },
             "Variables": [],
@@ -214,12 +215,12 @@
                 "Id": 7,
                 "Type": "call",
                 "Properties": {
-                  "_type": "Sandbox.Game/Sandbox.CharacterController",
+                  "_name": "Move",
                   "_isStatic": false,
-                  "_name": "Move"
+                  "_type": "Sandbox.Game/Sandbox.CharacterController"
                 },
                 "UserData": {
-                  "Position": "480,48"
+                  "Position": "272,80"
                 }
               },
               {
@@ -229,14 +230,14 @@
                   "T": "Sandbox.Game/Sandbox.CharacterController"
                 },
                 "UserData": {
-                  "Position": "32,-96"
+                  "Position": "-16,80"
                 }
               },
               {
                 "Id": 17,
                 "Type": "input.down",
                 "UserData": {
-                  "Position": "-128,-416"
+                  "Position": "608,-160"
                 }
               },
               {
@@ -248,14 +249,186 @@
                   "_name": "Accelerate"
                 },
                 "UserData": {
-                  "Position": "512,-336"
+                  "Position": "1680,-320"
                 }
               },
               {
                 "Id": 19,
                 "Type": "if",
                 "UserData": {
-                  "Position": "160,-416"
+                  "Position": "832,-160"
+                }
+              },
+              {
+                "Id": 20,
+                "Type": "property.get",
+                "Properties": {
+                  "_name": "friction",
+                  "_type": "package.local.boxhead/PlayerPhysics"
+                },
+                "UserData": {
+                  "Position": "272,-832"
+                }
+              },
+              {
+                "Id": 21,
+                "Type": "call",
+                "Properties": {
+                  "_name": "ApplyFriction",
+                  "_isStatic": false,
+                  "_type": "Sandbox.Game/Sandbox.CharacterController"
+                },
+                "UserData": {
+                  "Position": "544,-880"
+                }
+              },
+              {
+                "Id": 22,
+                "Type": "scene.get",
+                "Properties": {
+                  "T": "Sandbox.Game/Sandbox.CharacterController"
+                },
+                "UserData": {
+                  "Position": "208,-896"
+                }
+              },
+              {
+                "Id": 23,
+                "Type": "all",
+                "UserData": {
+                  "Position": "-80,-880"
+                }
+              },
+              {
+                "Id": 25,
+                "Type": "scene.get",
+                "Properties": {
+                  "T": "package.local.boxhead/PlayerPhysics"
+                },
+                "UserData": {
+                  "Position": "80,-832"
+                }
+              },
+              {
+                "Id": 26,
+                "Type": "input.down",
+                "UserData": {
+                  "Position": "608,-64"
+                }
+              },
+              {
+                "Id": 27,
+                "Type": "if",
+                "UserData": {
+                  "Position": "832,-64"
+                }
+              },
+              {
+                "Id": 29,
+                "Type": "property.get",
+                "Properties": {
+                  "_name": "Transform",
+                  "_type": "Sandbox.Game/Sandbox.GameObject"
+                },
+                "UserData": {
+                  "Position": "752,-496"
+                }
+              },
+              {
+                "Id": 31,
+                "Type": "property.get",
+                "Properties": {
+                  "_name": "Rotation",
+                  "_type": "Sandbox.Game/Sandbox.GameTransform"
+                },
+                "UserData": {
+                  "Position": "928,-496"
+                }
+              },
+              {
+                "Id": 41,
+                "Type": "property.get",
+                "ParentId": 31,
+                "Properties": {
+                  "_name": "Up",
+                  "_type": "Sandbox.System/Rotation"
+                }
+              },
+              {
+                "Id": 42,
+                "Type": "property.get",
+                "ParentId": 31,
+                "Properties": {
+                  "_name": "Right",
+                  "_type": "Sandbox.System/Rotation"
+                }
+              },
+              {
+                "Id": 43,
+                "Type": "property.get",
+                "ParentId": 31,
+                "Properties": {
+                  "_name": "Forward",
+                  "_type": "Sandbox.System/Rotation"
+                }
+              },
+              {
+                "Id": 50,
+                "Type": "op.multiply",
+                "UserData": {
+                  "Position": "1264,-544"
+                }
+              },
+              {
+                "Id": 51,
+                "Type": "property.get",
+                "Properties": {
+                  "_name": "moveSpeed",
+                  "_type": "package.local.boxhead/PlayerPhysics"
+                },
+                "UserData": {
+                  "Position": "928,-592"
+                }
+              },
+              {
+                "Id": 52,
+                "Type": "scene.get",
+                "Properties": {
+                  "T": "package.local.boxhead/PlayerPhysics"
+                },
+                "UserData": {
+                  "Position": "688,-592"
+                }
+              },
+              {
+                "Id": 53,
+                "Type": "scene.get",
+                "Properties": {
+                  "T": "Sandbox.Game/Sandbox.CharacterController"
+                },
+                "UserData": {
+                  "Position": "1664,-400"
+                }
+              },
+              {
+                "Id": 60,
+                "Type": "property.set",
+                "Properties": {
+                  "_name": "inputDir",
+                  "_type": "package.local.boxhead/PlayerPhysics"
+                },
+                "UserData": {
+                  "Position": "1104,-160"
+                }
+              },
+              {
+                "Id": 61,
+                "Type": "scene.get",
+                "Properties": {
+                  "T": "package.local.boxhead/PlayerPhysics"
+                },
+                "UserData": {
+                  "Position": "1008,-352"
                 }
               }
             ],
@@ -290,19 +463,14 @@
                 "DstName": "action"
               },
               {
-                "SrcId": 19,
-                "SrcName": "true",
-                "DstId": 18,
-                "DstName": "_signal"
-              },
-              {
-                "SrcId": 8,
+                "SrcId": 53,
                 "SrcName": "_result",
                 "DstId": 18,
                 "DstName": "_target"
               },
               {
-                "Value": "200,0,0",
+                "SrcId": 50,
+                "SrcName": "_result",
                 "DstId": 18,
                 "DstName": "vector"
               },
@@ -317,6 +485,119 @@
                 "SrcName": "_result",
                 "DstId": 19,
                 "DstName": "condition"
+              },
+              {
+                "SrcId": 25,
+                "SrcName": "_result",
+                "DstId": 20,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 23,
+                "SrcName": "_signal",
+                "DstId": 21,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 22,
+                "SrcName": "_result",
+                "DstId": 21,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 20,
+                "SrcName": "_result",
+                "DstId": 21,
+                "DstName": "frictionAmount"
+              },
+              {
+                "SrcId": 0,
+                "SrcName": "_signal",
+                "DstId": 23,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 0,
+                "SrcName": "_target",
+                "DstId": 25,
+                "DstName": "_this"
+              },
+              {
+                "Value": "Backward",
+                "DstId": 26,
+                "DstName": "action"
+              },
+              {
+                "SrcId": 6,
+                "SrcName": "_signal",
+                "DstId": 27,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 26,
+                "SrcName": "_result",
+                "DstId": 27,
+                "DstName": "condition"
+              },
+              {
+                "SrcId": 0,
+                "SrcName": "_target",
+                "DstId": 29,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 29,
+                "SrcName": "_result",
+                "DstId": 31,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 31,
+                "SrcName": "_result",
+                "DstId": 41,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 31,
+                "SrcName": "_result",
+                "DstId": 42,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 31,
+                "SrcName": "_result",
+                "DstId": 43,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 51,
+                "SrcName": "_result",
+                "DstId": 50,
+                "DstName": "a"
+              },
+              {
+                "SrcId": 43,
+                "SrcName": "_result",
+                "DstId": 50,
+                "DstName": "b"
+              },
+              {
+                "SrcId": 52,
+                "SrcName": "_result",
+                "DstId": 51,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 19,
+                "SrcName": "true",
+                "DstId": 60,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 61,
+                "SrcName": "_result",
+                "DstId": 60,
+                "DstName": "_target"
               }
             ]
           }
@@ -330,6 +611,18 @@
           "IgnoreLayers": "",
           "Radius": 16,
           "StepHeight": 18
+        },
+        {
+          "__type": "PlayerPhysics",
+          "friction": 1,
+          "inputDir": "0,0,0",
+          "moveSpeed": 10
+        },
+        {
+          "__type": "PlayerPhysics",
+          "friction": 0,
+          "inputDir": "0,0,0",
+          "moveSpeed": 0
         }
       ]
     },
@@ -421,6 +714,6 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-03-04T08:57:27.496577-06:00",
+  "LastSaved": "2024-03-04T10:08:09.9015243-06:00",
   "__references": []
 }
