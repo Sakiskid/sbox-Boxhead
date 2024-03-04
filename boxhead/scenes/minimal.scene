@@ -5,6 +5,7 @@
       "Id": "bfc59c12-1ed2-4f91-8956-a95a315eac3c",
       "Name": "Sun",
       "Rotation": "-0.0729315,0.4822396,0.1305433,0.8631827",
+      "Tags": "light_directional,light",
       "Enabled": true,
       "Components": [
         {
@@ -20,6 +21,7 @@
     {
       "Id": "00344a8c-fa5e-45ae-b12a-10bb781a1dc3",
       "Name": "2D Skybox",
+      "Tags": "skybox",
       "Enabled": true,
       "Components": [
         {
@@ -66,45 +68,9 @@
       ]
     },
     {
-      "Id": "3c2490ef-54a0-49bb-8f13-490e40aa51d1",
-      "Name": "Cube",
-      "Position": "21.41682,74.1244,14.40159",
-      "Rotation": "0.00000001819328,-0.00000000000000008235059,0.3052325,0.952278",
-      "Scale": "0.5632889,0.5632889,0.5632889",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": "materials/default.vmat",
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,0,0.93333,1"
-        },
-        {
-          "__type": "BoxCollider",
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false,
-          "Surface": null
-        },
-        {
-          "__type": "Rigidbody",
-          "AngularDamping": 0,
-          "Gravity": true,
-          "LinearDamping": 0,
-          "Locking": {},
-          "RigidbodyFlags": 0,
-          "StartAsleep": false
-        }
-      ]
-    },
-    {
       "Id": "523e3e8f-a4ec-4ec1-af9a-d86ffc9c17e1",
       "Name": "Cube (1)",
-      "Position": "40.81348,46.97572,14.40159",
+      "Position": "40.81348,46.97572,175.5562",
       "Rotation": "0.00000001819328,-0.00000000000000008235059,0.3052325,0.952278",
       "Scale": "0.5632889,0.5632889,0.5632889",
       "Enabled": true,
@@ -129,65 +95,179 @@
         {
           "__type": "Rigidbody",
           "AngularDamping": 0,
-          "Gravity": true,
+          "Gravity": false,
           "LinearDamping": 0,
           "Locking": {},
+          "MassOverride": 0,
           "RigidbodyFlags": 0,
           "StartAsleep": false
-        }
-      ]
-    },
-    {
-      "Id": "5b483a09-bbf2-4949-98c7-a73b789d0ee7",
-      "Name": "Cube (2)",
-      "Position": "49.53707,34.08896,43.67614",
-      "Rotation": "0.00000001819328,-0.00000000000000008235059,0.3052325,0.952278",
-      "Scale": "0.5632889,0.5632889,0.5632889",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": "materials/default.vmat",
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,0,0.93333,1"
         },
         {
-          "__type": "BoxCollider",
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false,
-          "Surface": null
+          "__type": "UpdateActionComponent",
+          "Action": {
+            "Version": 5,
+            "UserData": {
+              "Title": "Updateaaa",
+              "id": "ef24df7c-a135-423b-bd97-29f278cbd37b",
+              "ReferencedComponentTypes": [
+                "Sandbox.Game/Sandbox.CharacterController"
+              ]
+            },
+            "Variables": [],
+            "Nodes": [
+              {
+                "Id": 0,
+                "Type": "input",
+                "UserData": {
+                  "Position": "-240,-288"
+                }
+              },
+              {
+                "Id": 6,
+                "Type": "all",
+                "UserData": {
+                  "Position": "-64,-288"
+                }
+              },
+              {
+                "Id": 7,
+                "Type": "call",
+                "Properties": {
+                  "_type": "Sandbox.Game/Sandbox.CharacterController",
+                  "_isStatic": false,
+                  "_name": "Move"
+                },
+                "UserData": {
+                  "Position": "480,48"
+                }
+              },
+              {
+                "Id": 8,
+                "Type": "scene.get",
+                "Properties": {
+                  "T": "Sandbox.Game/Sandbox.CharacterController"
+                },
+                "UserData": {
+                  "Position": "32,-96"
+                }
+              },
+              {
+                "Id": 17,
+                "Type": "input.down",
+                "UserData": {
+                  "Position": "-128,-416"
+                }
+              },
+              {
+                "Id": 18,
+                "Type": "call",
+                "Properties": {
+                  "_type": "Sandbox.Game/Sandbox.CharacterController",
+                  "_isStatic": false,
+                  "_name": "Accelerate"
+                },
+                "UserData": {
+                  "Position": "448,-384"
+                }
+              },
+              {
+                "Id": 19,
+                "Type": "if",
+                "UserData": {
+                  "Position": "160,-416"
+                }
+              },
+              {
+                "Id": 20,
+                "Type": "op.andalso",
+                "UserData": {
+                  "Position": "64,-192"
+                }
+              }
+            ],
+            "Links": [
+              {
+                "SrcId": 0,
+                "SrcName": "_signal",
+                "DstId": 6,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 6,
+                "SrcName": "_signal",
+                "DstId": 7,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 8,
+                "SrcName": "_result",
+                "DstId": 7,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 0,
+                "SrcName": "_target",
+                "DstId": 8,
+                "DstName": "_this"
+              },
+              {
+                "Value": "Forward",
+                "DstId": 17,
+                "DstName": "action"
+              },
+              {
+                "SrcId": 8,
+                "SrcName": "_result",
+                "DstId": 18,
+                "DstName": "_target"
+              },
+              {
+                "Value": "200,0,0",
+                "DstId": 18,
+                "DstName": "vector"
+              },
+              {
+                "SrcId": 6,
+                "SrcName": "_signal",
+                "DstId": 19,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 17,
+                "SrcName": "_result",
+                "DstId": 19,
+                "DstName": "condition"
+              }
+            ]
+          }
         },
         {
-          "__type": "Rigidbody",
-          "AngularDamping": 0,
-          "Gravity": true,
-          "LinearDamping": 0,
-          "Locking": {},
-          "RigidbodyFlags": 0,
-          "StartAsleep": false
+          "__type": "CharacterController",
+          "Acceleration": 10,
+          "Bounciness": 0.3,
+          "GroundAngle": 45,
+          "Height": 64,
+          "IgnoreLayers": "",
+          "Radius": 16,
+          "StepHeight": 18
         }
       ]
     },
     {
       "Id": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
       "Name": "Camera",
-      "Position": "-267.452,-379.653,297.7903",
-      "Rotation": "-0.1448582,0.2860239,0.4279631,0.8450171",
+      "Position": "0,0,250",
+      "Rotation": "0,0.7071068,0,0.7071068",
       "Enabled": true,
       "Components": [
         {
           "__type": "CameraComponent",
           "BackgroundColor": "0.33333,0.46275,0.52157,1",
           "ClearFlags": "All",
-          "FieldOfView": 60,
+          "FieldOfView": 80.52,
           "IsMainCamera": true,
-          "Orthographic": false,
-          "OrthographicHeight": 1204,
+          "Orthographic": true,
+          "OrthographicHeight": 513.20135,
           "Priority": 1,
           "RenderExcludeTags": "",
           "RenderTags": "",
@@ -207,7 +287,8 @@
                 "t": 1,
                 "c": "1,1,1,1"
               }
-            ]
+            ],
+            "alpha": []
           },
           "BloomCurve": [
             {
@@ -232,7 +313,7 @@
         },
         {
           "__type": "Sharpen",
-          "Scale": 0.2
+          "Scale": 0.3
         }
       ]
     }
@@ -260,6 +341,6 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-02-08T13:32:32.3548959\u002B00:00",
+  "LastSaved": "2024-03-04T06:34:52.2016785-06:00",
   "__references": []
 }
