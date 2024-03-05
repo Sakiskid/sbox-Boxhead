@@ -125,6 +125,9 @@
             "go": "fbbb4c35-ebff-4a68-af10-fc6bdd059bb8",
             "component_type": "Pistol"
           }
+        },
+        {
+          "__type": "PlayerInfo"
         }
       ],
       "Children": [
@@ -283,7 +286,7 @@
     },
     {
       "Id": "47f75e1f-4569-45af-a3a6-6027fe1ee4bd",
-      "Name": "Cube",
+      "Name": "Zombo",
       "Position": "452.6194,128.5521,13.00603",
       "Scale": "1,1,2.179531",
       "Enabled": true,
@@ -299,6 +302,11 @@
         },
         {
           "__type": "Zombo",
+          "Agent": {
+            "_type": "component",
+            "go": "47f75e1f-4569-45af-a3a6-6027fe1ee4bd",
+            "component_type": "NavMeshAgent"
+          },
           "Health": 20
         },
         {
@@ -308,6 +316,16 @@
           "Scale": "50,50,50",
           "Static": false,
           "Surface": null
+        },
+        {
+          "__type": "NavMeshAgent",
+          "Acceleration": 1200,
+          "Height": 64,
+          "MaxSpeed": 120,
+          "Radius": 16,
+          "Separation": 0.25,
+          "UpdatePosition": true,
+          "UpdateRotation": false
         }
       ]
     }
@@ -321,7 +339,7 @@
     "TimeScale": 1,
     "UseFixedUpdate": true,
     "NavMesh": {
-      "Enabled": false,
+      "Enabled": true,
       "IncludeStaticBodies": true,
       "IncludeKeyframedBodies": true,
       "EditorAutoUpdate": true,
@@ -335,6 +353,6 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-03-05T10:47:34.6695315-06:00",
+  "LastSaved": "2024-03-05T11:00:40.6807854-06:00",
   "__references": []
 }
