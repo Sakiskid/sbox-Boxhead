@@ -253,7 +253,6 @@
       "Position": "640,-0,32",
       "Rotation": "0,0,-0.7071067,0.7071068",
       "Scale": "20,1,1",
-      "Enabled": true,
       "Components": [
         {
           "__type": "ModelRenderer",
@@ -285,7 +284,7 @@
     {
       "Id": "47f75e1f-4569-45af-a3a6-6027fe1ee4bd",
       "Name": "Cube",
-      "Position": "367.8973,62.82109,13.00603",
+      "Position": "452.6194,128.5521,13.00603",
       "Scale": "1,1,2.179531",
       "Enabled": true,
       "Components": [
@@ -296,7 +295,19 @@
           "MaterialOverride": null,
           "Model": "models/dev/box.vmdl",
           "RenderType": "On",
-          "Tint": "1,1,1,1"
+          "Tint": "0.39217,0.8186,0.47035,1"
+        },
+        {
+          "__type": "Zombo",
+          "Health": 20
+        },
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
         }
       ]
     }
@@ -324,6 +335,6 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-03-05T10:36:14.4782688-06:00",
+  "LastSaved": "2024-03-05T10:45:46.7865496-06:00",
   "__references": []
 }

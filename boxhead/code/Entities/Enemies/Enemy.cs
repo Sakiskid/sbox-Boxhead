@@ -2,7 +2,7 @@ using Sandbox;
 
 public abstract class Enemy : Component
 {
-	public float Health { get; set; }
+	[Property] public float Health { get; set; }
 	
 	public abstract void OnCollisionStart( Collision other );
 	public abstract void OnCollisionUpdate( Collision other );

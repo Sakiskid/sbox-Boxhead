@@ -8,11 +8,11 @@
     <projectFile profileName="Action Graph">Z:/SteamLibrary/steamapps/common/sbox/editor/ActionGraph/Action Graph.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6afeb92f-fcbc-45be-ac45-ef157c039ade" name="Changes" comment="shooting in correct direction">
-      <change afterPath="$PROJECT_DIR$/code/IDamageable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.boxhead/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.boxhead/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6afeb92f-fcbc-45be-ac45-ef157c039ade" name="Changes" comment="working scene again">
+      <change afterPath="$PROJECT_DIR$/code/Entities/Enemies/Zombo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Entities/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entities/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prefab/bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/prefab/bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Entities/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entities/Enemies/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/minimal.scene" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/minimal.scene" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709564979539</updated>
       <workItem from="1709564984507" duration="12598000" />
-      <workItem from="1709650501097" duration="5789000" />
+      <workItem from="1709650501097" duration="6159000" />
     </task>
     <task id="LOCAL-00001" summary="adds weapon code">
       <created>1709654005534</created>
@@ -161,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709656493407</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="working scene again">
+      <created>1709656644509</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709656644509</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +210,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="adds weapon code" />
     <MESSAGE value="shooting in correct direction" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="working scene again" />
+    <option name="LAST_COMMIT_MESSAGE" value="working scene again" />
   </component>
 </project>
