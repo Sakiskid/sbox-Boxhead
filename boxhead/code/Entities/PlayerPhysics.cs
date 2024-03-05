@@ -49,6 +49,8 @@ public sealed class PlayerPhysics : Component
 
 	private void FaceDirection()
 	{
+		if ( IsProxy ) return;
+		
 		if ( inputDir == Vector3.Zero ) return;
 		GameObject.Transform.Rotation = Rotation.LookAt(inputDir, Vector3.Up);
 	}

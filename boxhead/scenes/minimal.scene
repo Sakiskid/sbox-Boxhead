@@ -2,6 +2,40 @@
   "Id": "9f832399-4887-46b0-8f21-2ee284f538e2",
   "GameObjects": [
     {
+      "Id": "99443e3e-7f31-4b24-aa8a-eec7c2753d56",
+      "Name": "=== CORE ===",
+      "Enabled": true,
+      "Children": [
+        {
+          "Id": "b08dd794-28fa-4c1b-b084-a3d5c86a3163",
+          "Name": "Networker",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "NetworkHelper",
+              "PlayerPrefab": {
+                "_type": "gameobject",
+                "prefab": "prefab/player.prefab"
+              },
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "c45345fe-cc68-48da-9888-6e065abcbbb9"
+                }
+              ],
+              "StartServer": true
+            }
+          ]
+        },
+        {
+          "Id": "c45345fe-cc68-48da-9888-6e065abcbbb9",
+          "Name": "Player Spawn",
+          "Position": "0,0,6.997137",
+          "Enabled": true
+        }
+      ]
+    },
+    {
       "Id": "bfc59c12-1ed2-4f91-8956-a95a315eac3c",
       "Name": "Sun",
       "Rotation": "-0.0729315,0.4822396,0.1305433,0.8631827",
@@ -64,99 +98,6 @@
           "Scale": "100,100,10",
           "Static": false,
           "Surface": null
-        }
-      ]
-    },
-    {
-      "Id": "523e3e8f-a4ec-4ec1-af9a-d86ffc9c17e1",
-      "Name": "Player",
-      "Position": "40.81348,46.97572,32",
-      "Networked": true,
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": false,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": "materials/default.vmat",
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,0,0.93333,1"
-        },
-        {
-          "__type": "BoxCollider",
-          "Center": "0,0,25",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false,
-          "Surface": null
-        },
-        {
-          "__type": "Rigidbody",
-          "AngularDamping": 0,
-          "Gravity": false,
-          "LinearDamping": 0.5,
-          "Locking": {},
-          "MassOverride": 0,
-          "RigidbodyFlags": 0,
-          "StartAsleep": false
-        },
-        {
-          "__type": "CharacterController",
-          "Acceleration": 10,
-          "Bounciness": 0.3,
-          "GroundAngle": 48.96,
-          "Height": 52.31,
-          "IgnoreLayers": "",
-          "Radius": 25.46,
-          "StepHeight": 15.39
-        },
-        {
-          "__type": "PlayerPhysics",
-          "friction": 1,
-          "inputDir": "0,0,0",
-          "moveSpeed": 500
-        },
-        {
-          "__type": "PlayerWeapons",
-          "CurrentWeapon": {
-            "_type": "component",
-            "go": "fbbb4c35-ebff-4a68-af10-fc6bdd059bb8",
-            "component_type": "Pistol"
-          }
-        },
-        {
-          "__type": "PlayerInfo"
-        }
-      ],
-      "Children": [
-        {
-          "Id": "f76893e6-277e-4785-830c-e13e3f63db8b",
-          "Name": "PlayerModel",
-          "Position": "0.0000003001707,0.0000009364861,25",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "BodyGroups": 18446744073709551615,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "models/dev/box.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ],
-          "Children": [
-            {
-              "Id": "fbbb4c35-ebff-4a68-af10-fc6bdd059bb8",
-              "Name": "w_usp",
-              "Position": "15,0,-15",
-              "Scale": "5,5,5",
-              "Enabled": true,
-              "__Prefab": "prefab/weapons/pistol.prefab"
-            }
-          ]
         }
       ]
     },
@@ -561,6 +502,6 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-03-05T11:20:48.7089486-06:00",
+  "LastSaved": "2024-03-05T11:36:38.3782942-06:00",
   "__references": []
 }

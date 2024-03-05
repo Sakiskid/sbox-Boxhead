@@ -1,0 +1,101 @@
+{
+  "RootObject": {
+    "Id": "dedc0646-c74d-463c-9f2e-d8db6295204b",
+    "Name": "player",
+    "Networked": true,
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "PlayerInfo",
+        "ColorIndex": 0,
+        "Colors": [
+          "1,0,0,1",
+          "0,1,0.11667,1",
+          "0,0.18333,1,1"
+        ],
+        "PlayerModelObj": {
+          "_type": "gameobject",
+          "go": "fc5818f0-8f98-4193-94ce-7fb17fcf22f3"
+        }
+      },
+      {
+        "__type": "BoxCollider",
+        "Center": "0,0,25",
+        "IsTrigger": false,
+        "Scale": "50,50,50",
+        "Static": false,
+        "Surface": null
+      },
+      {
+        "__type": "Rigidbody",
+        "AngularDamping": 0,
+        "Gravity": false,
+        "LinearDamping": 0.5,
+        "Locking": {},
+        "MassOverride": 0,
+        "RigidbodyFlags": 0,
+        "StartAsleep": false
+      },
+      {
+        "__type": "CharacterController",
+        "Acceleration": 10,
+        "Bounciness": 0.3,
+        "GroundAngle": 48.96,
+        "Height": 52.31,
+        "IgnoreLayers": "",
+        "Radius": 25.46,
+        "StepHeight": 15.39
+      },
+      {
+        "__type": "PlayerPhysics",
+        "friction": 1,
+        "inputDir": "0,0,0",
+        "moveSpeed": 500
+      },
+      {
+        "__type": "PlayerWeapons",
+        "CurrentWeapon": {
+          "_type": "component",
+          "go": "196fc21a-0152-495f-b4aa-0f895aa733d9",
+          "component_type": "Pistol"
+        }
+      }
+    ],
+    "Children": [
+      {
+        "Id": "fc5818f0-8f98-4193-94ce-7fb17fcf22f3",
+        "Name": "PlayerModel",
+        "Position": "0.0000003001707,0.0000009364861,25",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "SkinnedModelRenderer",
+            "AnimationGraph": null,
+            "BodyGroups": 18446744073709551615,
+            "BoneMergeTarget": null,
+            "CreateBoneObjects": false,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Model": "models/dev/box.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ],
+        "Children": [
+          {
+            "Id": "196fc21a-0152-495f-b4aa-0f895aa733d9",
+            "Name": "w_usp",
+            "Position": "15,0,-15",
+            "Scale": "5,5,5",
+            "Enabled": true,
+            "__Prefab": "prefab/weapons/pistol.prefab"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}
