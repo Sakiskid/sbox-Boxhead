@@ -117,12 +117,19 @@
           "friction": 1,
           "inputDir": "0,0,0",
           "moveSpeed": 500
+        },
+        {
+          "__type": "PlayerWeapons",
+          "bulletPrefab": {
+            "_type": "gameobject",
+            "prefab": "prefab/bullet.prefab"
+          }
         }
       ],
       "Children": [
         {
           "Id": "f76893e6-277e-4785-830c-e13e3f63db8b",
-          "Name": "Cube",
+          "Name": "PlayerModel",
           "Position": "0.0000003001707,0.0000009364861,25",
           "Enabled": true,
           "Components": [
@@ -143,17 +150,7 @@
               "Position": "15,0,-15",
               "Scale": "5,5,5",
               "Enabled": true,
-              "Components": [
-                {
-                  "__type": "Prop",
-                  "Health": 0,
-                  "IsStatic": false,
-                  "Model": "models/weapons/sbox_pistol_usp/w_usp.vmdl",
-                  "OnPropBreak": null,
-                  "OnPropTakeDamage": null,
-                  "ShowCreatedComponents": false
-                }
-              ]
+              "__Prefab": "prefab/weapons/pistol.prefab"
             }
           ]
         }
@@ -275,6 +272,14 @@
           "Surface": null
         }
       ]
+    },
+    {
+      "Id": "04502b4f-1270-4097-9996-ad80d7f6b3d2",
+      "Name": "bullet",
+      "Position": "-32.98802,-22.11693,80.49216",
+      "Scale": "0.25,0.25,0.25",
+      "Enabled": true,
+      "__Prefab": "prefab/bullet.prefab"
     }
   ],
   "SceneProperties": {
@@ -300,8 +305,6 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-03-04T13:57:48.9993816-06:00",
-  "__references": [
-    "facepunch.w_usp"
-  ]
+  "LastSaved": "2024-03-05T09:49:54.1231527-06:00",
+  "__references": []
 }
