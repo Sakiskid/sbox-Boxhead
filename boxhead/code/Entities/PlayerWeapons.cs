@@ -8,20 +8,26 @@ public sealed class PlayerWeapons : Component
 		get;
 		set;
 	}
-	
-	protected override void OnStart()
+
+	protected override void OnUpdate()
 	{
-		_ = StartShooting();
-	}
-	
-	private async Task StartShooting()
-	{
-		while ( true )
+		if ( IsProxy ) return;
+		base.OnUpdate();
+		if ( Input.Down( "attack1" ) )
 		{
-			await Task.DelaySeconds( 1 );
 			Shoot();
 		}
 	}
+
+	// Keeping this for async example
+	// private async Task StartShooting()
+	// {
+	// 	while ( true )
+	// 	{
+	// 		await Task.DelaySeconds( 1 );
+	// 		Shoot();
+	// 	}
+	// }
 
 	private void Shoot()
 	{
