@@ -8,11 +8,9 @@
     <projectFile profileName="Action Graph">Z:/SteamLibrary/steamapps/common/sbox/editor/ActionGraph/Action Graph.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6afeb92f-fcbc-45be-ac45-ef157c039ade" name="Changes" comment="working scene again">
-      <change afterPath="$PROJECT_DIR$/code/Entities/Enemies/Zombo.cs" afterDir="false" />
+    <list default="true" id="6afeb92f-fcbc-45be-ac45-ef157c039ade" name="Changes" comment="add logging and scene changes for collider">
       <change beforePath="$PROJECT_DIR$/code/Entities/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entities/Bullet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Entities/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entities/Enemies/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/minimal.scene" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/minimal.scene" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +136,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709564979539</updated>
       <workItem from="1709564984507" duration="12598000" />
-      <workItem from="1709650501097" duration="6159000" />
+      <workItem from="1709650501097" duration="6483000" />
     </task>
     <task id="LOCAL-00001" summary="adds weapon code">
       <created>1709654005534</created>
@@ -168,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709656644509</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add logging and scene changes for collider">
+      <created>1709657156531</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709657156531</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +216,7 @@
     <MESSAGE value="adds weapon code" />
     <MESSAGE value="shooting in correct direction" />
     <MESSAGE value="working scene again" />
-    <option name="LAST_COMMIT_MESSAGE" value="working scene again" />
+    <MESSAGE value="add logging and scene changes for collider" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logging and scene changes for collider" />
   </component>
 </project>

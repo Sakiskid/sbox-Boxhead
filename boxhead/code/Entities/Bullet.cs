@@ -18,15 +18,18 @@ public sealed class Bullet : Component, Component.ICollisionListener
 	
 	public void OnCollisionStart( Collision other )
 	{
-		Log.Info("Collision");
-		var enemy = other.Other.GameObject.Components.Get<Enemy>();
-		var zombo = other.Other.GameObject.Components.Get<Zombo>();
-		Log.Info("zombo or enemy? " + (enemy == null) + (zombo == null) );
-		if ( enemy != null )
+		// var enemy = other.Other.GameObject.Components.Get<Enemy>();
+		var target = other.Other.GameObject.Components.Get<Sandbox.IDamageable>();
+		
+		// If it's a damageable:
+		if ( target != null )
 		{
 			Log.Info("Giving enemy damage: " + Damage);
-			enemy.TakeDamage( Damage );
+			target.TakeDamage( Damage );
 		}
+		
+		// destroy the bullet
+		GameObject.Destroy();
 	}
 
 	public void OnCollisionUpdate( Collision other )

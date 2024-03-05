@@ -1,7 +1,9 @@
 using Sandbox;
+using Sandbox.Diagnostics;
 
-public abstract class Enemy : Component
+public abstract class Enemy : Component, IDamageable
 {
+	internal Logger Log = new Logger( "Enemy: " );
 	[Property] public float Health { get; set; }
 	
 	public abstract void OnCollisionStart( Collision other );
@@ -16,6 +18,7 @@ public abstract class Enemy : Component
 	
 	internal virtual void Die()
 	{
-		Destroy();
+		Log.Info($"{GameObject.Name} dying!");
+		GameObject.Destroy();
 	}
 }
