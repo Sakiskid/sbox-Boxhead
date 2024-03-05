@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using Sandbox;
 using Sandbox.Diagnostics;
 using Sandbox.Entities;
@@ -9,13 +10,28 @@ public abstract class Enemy : Component, IDamageable
 	[Property] public float Health { get; set; }
 	[Property] internal NavMeshAgent Agent { get; set; }
 	
+	internal float intervalBetweenCheckingTargetPosition;
+	internal Vector2 checkTargetPositionRange = new Vector2( 0.5f, 2f );
+	
+	// Collision Methods
 	public abstract void OnCollisionStart( Collision other );
 	public abstract void OnCollisionUpdate( Collision other );
 	public abstract void OnCollisionStop( CollisionStop other );
-
-	protected override void OnUpdate()
+	
+	
+	protected override void OnStart()
 	{
-		Agent.MoveTo(PlayerTracker.Players[0].Transform.Position);
+		intervalBetweenCheckingTargetPosition = Game.Random.Float( checkTargetPositionRange.x, checkTargetPositionRange.y );
+		_ = CheckAndUpdateTarget();
+	}
+
+	internal async Task CheckAndUpdateTarget()
+	{
+		while ( true )
+		{
+			Agent.MoveTo(PlayerTracker.Players[0].Transform.Position);
+			await Task.DelaySeconds( intervalBetweenCheckingTargetPosition );
+		}
 	}
 
 	public void TakeDamage( float amt )
