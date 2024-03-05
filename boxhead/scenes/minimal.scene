@@ -163,7 +163,7 @@
     {
       "Id": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
       "Name": "Camera",
-      "Position": "0,0,288",
+      "Position": "-441.4267,0,1275.929",
       "Rotation": "0,0.5776677,0,0.816272",
       "Enabled": true,
       "Components": [
@@ -171,7 +171,7 @@
           "__type": "CameraComponent",
           "BackgroundColor": "0.33333,0.46275,0.52157,1",
           "ClearFlags": "All",
-          "FieldOfView": 88.76,
+          "FieldOfView": 100.3,
           "IsMainCamera": true,
           "Orthographic": true,
           "OrthographicHeight": 2000,
@@ -180,7 +180,7 @@
           "RenderTags": "",
           "TargetEye": "None",
           "Viewport": "0,0,1,1",
-          "ZFar": 10000,
+          "ZFar": 10004.198,
           "ZNear": 10
         },
         {
@@ -251,6 +251,195 @@
       ]
     },
     {
+      "Id": "3cdc0e88-2f1d-49f5-ac30-6d5794dd6180",
+      "Name": "Cube (2)",
+      "Position": "224,-31.99996,32.00003",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Scale": "20,1,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "4391cd8d-7005-46ba-88d5-cb4ea1994c67",
+      "Name": "Cube (3)",
+      "Position": "-128,-160,32.00004",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Scale": "20,1,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "fbdafc22-2059-4486-9692-ca0225963c4f",
+      "Name": "Cube (4)",
+      "Position": "-575.9999,-160.0001,32.00004",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Scale": "20,1,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "5f7d235f-484f-44d9-bd69-7076bc1a0f8f",
+      "Name": "Cube (5)",
+      "Position": "-0.695089,1024,32",
+      "Rotation": "0,0,-0.9999999,0.0000001490116",
+      "Scale": "40,1,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "3bd54837-013f-42ce-a554-38dbba61145c",
+      "Name": "Cube (6)",
+      "Position": "-0.6944787,-1024,32",
+      "Rotation": "0,0,-0.9999999,0.0000001490116",
+      "Scale": "40,1,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "a2ffa575-a99f-49a6-a9c9-488c41c09179",
+      "Name": "Cube (7)",
+      "Position": "1024,0.0003662109,31.99994",
+      "Rotation": "0,0,-0.7071066,0.7071068",
+      "Scale": "40,1,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "53b24f77-0580-45e2-8bcc-4be88e340c04",
+      "Name": "Cube (8)",
+      "Position": "-1024,-0.0005493164,31.99994",
+      "Rotation": "0,0,-0.7071066,0.7071068",
+      "Scale": "40,1,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
       "Id": "0ba2fd72-a08c-48a2-a700-8045976f8a45",
       "Name": "Cube (1)",
       "Position": "640,-0,32",
@@ -290,42 +479,32 @@
       "Position": "452.6194,128.5521,13.00603",
       "Scale": "1,1,2.179531",
       "Enabled": true,
+      "__Prefab": "prefab/enemies/zombo.prefab"
+    },
+    {
+      "Id": "af3616f1-12e0-4204-a04c-8f8c28454229",
+      "Name": "Zombie Spawner",
+      "Position": "750.1876,818.9257,7.901047",
+      "Enabled": true,
       "Components": [
         {
-          "__type": "ModelRenderer",
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "0.39217,0.8186,0.47035,1"
+          "__type": "SpriteRenderer",
+          "Additive": false,
+          "CastShadows": true,
+          "Color": "0.31188,0.06176,0.06176,1",
+          "DepthFeather": 0,
+          "FogStrength": 1,
+          "Opaque": true,
+          "Size": "10,10",
+          "Texture": "materials/particles/shapes/heart1.vtex"
         },
         {
-          "__type": "Zombo",
-          "Agent": {
-            "_type": "component",
-            "go": "47f75e1f-4569-45af-a3a6-6027fe1ee4bd",
-            "component_type": "NavMeshAgent"
+          "__type": "EnemySpawner",
+          "EnemyToSpawnPrefab": {
+            "_type": "gameobject",
+            "prefab": "prefab/enemies/zombo.prefab"
           },
-          "Health": 20
-        },
-        {
-          "__type": "BoxCollider",
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false,
-          "Surface": null
-        },
-        {
-          "__type": "NavMeshAgent",
-          "Acceleration": 1200,
-          "Height": 64,
-          "MaxSpeed": 120,
-          "Radius": 16,
-          "Separation": 0.25,
-          "UpdatePosition": true,
-          "UpdateRotation": false
+          "MaxEnemiesAtOnce": 20
         }
       ]
     }
@@ -353,6 +532,6 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-03-05T11:00:40.6807854-06:00",
+  "LastSaved": "2024-03-05T11:09:23.185904-06:00",
   "__references": []
 }

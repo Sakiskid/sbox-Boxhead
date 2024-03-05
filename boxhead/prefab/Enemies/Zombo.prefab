@@ -1,0 +1,51 @@
+{
+  "RootObject": {
+    "Id": "47f75e1f-4569-45af-a3a6-6027fe1ee4bd",
+    "Name": "Zombo",
+    "Position": "452.6194,128.5521,13.00603",
+    "Scale": "1,1,2.179531",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "ModelRenderer",
+        "BodyGroups": 18446744073709551615,
+        "MaterialGroup": null,
+        "MaterialOverride": null,
+        "Model": "models/dev/box.vmdl",
+        "RenderType": "On",
+        "Tint": "0.39217,0.8186,0.47035,1"
+      },
+      {
+        "__type": "Zombo",
+        "Agent": {
+          "_type": "component",
+          "go": "47f75e1f-4569-45af-a3a6-6027fe1ee4bd",
+          "component_type": "NavMeshAgent"
+        },
+        "Health": 20
+      },
+      {
+        "__type": "BoxCollider",
+        "Center": "0,0,0",
+        "IsTrigger": false,
+        "Scale": "50,50,50",
+        "Static": false,
+        "Surface": null
+      },
+      {
+        "__type": "NavMeshAgent",
+        "Acceleration": 1200,
+        "Height": 64,
+        "MaxSpeed": 120,
+        "Radius": 16,
+        "Separation": 0.25,
+        "UpdatePosition": true,
+        "UpdateRotation": false
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}
