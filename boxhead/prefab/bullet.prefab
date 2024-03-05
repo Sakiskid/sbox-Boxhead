@@ -1,6 +1,6 @@
 {
   "RootObject": {
-    "Id": "02a2d37f-36d5-43ae-8f29-6bb747486240",
+    "Id": "24328769-0646-49de-8eb2-2d08e4b3266c",
     "Name": "bullet",
     "Scale": "0.25,0.25,0.25",
     "Enabled": true,
@@ -34,6 +34,7 @@
       },
       {
         "__type": "Bullet",
+        "Damage": 10,
         "Speed": 1500
       }
     ],

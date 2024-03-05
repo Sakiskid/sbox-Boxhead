@@ -281,6 +281,24 @@
       "Scale": "0.25,0.25,0.25",
       "Enabled": true,
       "__Prefab": "prefab/bullet.prefab"
+    },
+    {
+      "Id": "47f75e1f-4569-45af-a3a6-6027fe1ee4bd",
+      "Name": "Cube",
+      "Position": "367.8973,62.82109,13.00603",
+      "Scale": "1,1,2.179531",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -306,6 +324,6 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-03-05T10:00:12.9107658-06:00",
+  "LastSaved": "2024-03-05T10:36:14.4782688-06:00",
   "__references": []
 }

@@ -1,0 +1,89 @@
+Index: scenes/minimal.scene
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"Id\": \"9f832399-4887-46b0-8f21-2ee284f538e2\",\r\n  \"GameObjects\": [\r\n    {\r\n      \"Id\": \"bfc59c12-1ed2-4f91-8956-a95a315eac3c\",\r\n      \"Name\": \"Sun\",\r\n      \"Rotation\": \"-0.0729315,0.4822396,0.1305433,0.8631827\",\r\n      \"Tags\": \"light_directional,light\",\r\n      \"Enabled\": true,\r\n      \"Components\": [\r\n        {\r\n          \"__type\": \"DirectionalLight\",\r\n          \"FogMode\": \"Enabled\",\r\n          \"FogStrength\": 1,\r\n          \"LightColor\": \"0.94419,0.97767,1,1\",\r\n          \"Shadows\": true,\r\n          \"SkyColor\": \"0.2532,0.32006,0.35349,1\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"Id\": \"00344a8c-fa5e-45ae-b12a-10bb781a1dc3\",\r\n      \"Name\": \"2D Skybox\",\r\n      \"Tags\": \"skybox\",\r\n      \"Enabled\": true,\r\n      \"Components\": [\r\n        {\r\n          \"__type\": \"SkyBox2D\",\r\n          \"SkyMaterial\": \"materials/skybox/light_test_sky_sunny03.vmat\",\r\n          \"Tint\": \"1,1,1,1\"\r\n        },\r\n        {\r\n          \"__type\": \"EnvmapProbe\",\r\n          \"Bounds\": {\r\n            \"Mins\": \"-512,-512,-512\",\r\n            \"Maxs\": \"512,512,512\"\r\n          },\r\n          \"Feathering\": 0.02,\r\n          \"Projection\": \"Sphere\",\r\n          \"Texture\": \"textures/cubemaps/default2.vtex\",\r\n          \"TintColor\": \"1,1,1,1\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"Id\": \"6ad70641-3c6c-4402-9c85-9a4969af4764\",\r\n      \"Name\": \"Plane\",\r\n      \"Scale\": \"20,20,5\",\r\n      \"Enabled\": true,\r\n      \"Components\": [\r\n        {\r\n          \"__type\": \"ModelRenderer\",\r\n          \"BodyGroups\": 18446744073709551615,\r\n          \"MaterialGroup\": null,\r\n          \"MaterialOverride\": \"materials/default.vmat\",\r\n          \"Model\": \"models/dev/plane.vmdl\",\r\n          \"RenderType\": \"On\",\r\n          \"Tint\": \"0.39546,0.51163,0.27128,1\"\r\n        },\r\n        {\r\n          \"__type\": \"BoxCollider\",\r\n          \"Center\": \"0,0,-5\",\r\n          \"IsTrigger\": false,\r\n          \"Scale\": \"100,100,10\",\r\n          \"Static\": false,\r\n          \"Surface\": null\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"Id\": \"523e3e8f-a4ec-4ec1-af9a-d86ffc9c17e1\",\r\n      \"Name\": \"Player\",\r\n      \"Position\": \"40.81348,46.97572,32\",\r\n      \"Networked\": true,\r\n      \"Enabled\": true,\r\n      \"Components\": [\r\n        {\r\n          \"__type\": \"ModelRenderer\",\r\n          \"__enabled\": false,\r\n          \"BodyGroups\": 18446744073709551615,\r\n          \"MaterialGroup\": null,\r\n          \"MaterialOverride\": \"materials/default.vmat\",\r\n          \"Model\": \"models/dev/box.vmdl\",\r\n          \"RenderType\": \"On\",\r\n          \"Tint\": \"1,0,0.93333,1\"\r\n        },\r\n        {\r\n          \"__type\": \"BoxCollider\",\r\n          \"Center\": \"0,0,25\",\r\n          \"IsTrigger\": false,\r\n          \"Scale\": \"50,50,50\",\r\n          \"Static\": false,\r\n          \"Surface\": null\r\n        },\r\n        {\r\n          \"__type\": \"Rigidbody\",\r\n          \"AngularDamping\": 0,\r\n          \"Gravity\": false,\r\n          \"LinearDamping\": 0.5,\r\n          \"Locking\": {},\r\n          \"MassOverride\": 0,\r\n          \"RigidbodyFlags\": 0,\r\n          \"StartAsleep\": false\r\n        },\r\n        {\r\n          \"__type\": \"CharacterController\",\r\n          \"Acceleration\": 10,\r\n          \"Bounciness\": 0.3,\r\n          \"GroundAngle\": 48.96,\r\n          \"Height\": 52.31,\r\n          \"IgnoreLayers\": \"\",\r\n          \"Radius\": 25.46,\r\n          \"StepHeight\": 15.39\r\n        },\r\n        {\r\n          \"__type\": \"PlayerPhysics\",\r\n          \"friction\": 1,\r\n          \"inputDir\": \"0,0,0\",\r\n          \"moveSpeed\": 500\r\n        },\r\n        {\r\n          \"__type\": \"PlayerWeapons\",\r\n          \"CurrentWeapon\": {\r\n            \"_type\": \"component\",\r\n            \"go\": \"fbbb4c35-ebff-4a68-af10-fc6bdd059bb8\",\r\n            \"component_type\": \"Pistol\"\r\n          }\r\n        }\r\n      ],\r\n      \"Children\": [\r\n        {\r\n          \"Id\": \"f76893e6-277e-4785-830c-e13e3f63db8b\",\r\n          \"Name\": \"PlayerModel\",\r\n          \"Position\": \"0.0000003001707,0.0000009364861,25\",\r\n          \"Enabled\": true,\r\n          \"Components\": [\r\n            {\r\n              \"__type\": \"ModelRenderer\",\r\n              \"BodyGroups\": 18446744073709551615,\r\n              \"MaterialGroup\": null,\r\n              \"MaterialOverride\": null,\r\n              \"Model\": \"models/dev/box.vmdl\",\r\n              \"RenderType\": \"On\",\r\n              \"Tint\": \"1,1,1,1\"\r\n            }\r\n          ],\r\n          \"Children\": [\r\n            {\r\n              \"Id\": \"fbbb4c35-ebff-4a68-af10-fc6bdd059bb8\",\r\n              \"Name\": \"w_usp\",\r\n              \"Position\": \"15,0,-15\",\r\n              \"Scale\": \"5,5,5\",\r\n              \"Enabled\": true,\r\n              \"__Prefab\": \"prefab/weapons/pistol.prefab\"\r\n            }\r\n          ]\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"Id\": \"3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a\",\r\n      \"Name\": \"Camera\",\r\n      \"Position\": \"0,0,288\",\r\n      \"Rotation\": \"0,0.5776677,0,0.816272\",\r\n      \"Enabled\": true,\r\n      \"Components\": [\r\n        {\r\n          \"__type\": \"CameraComponent\",\r\n          \"BackgroundColor\": \"0.33333,0.46275,0.52157,1\",\r\n          \"ClearFlags\": \"All\",\r\n          \"FieldOfView\": 88.76,\r\n          \"IsMainCamera\": true,\r\n          \"Orthographic\": true,\r\n          \"OrthographicHeight\": 2000,\r\n          \"Priority\": 1,\r\n          \"RenderExcludeTags\": \"\",\r\n          \"RenderTags\": \"\",\r\n          \"TargetEye\": \"None\",\r\n          \"Viewport\": \"0,0,1,1\",\r\n          \"ZFar\": 10000,\r\n          \"ZNear\": 10\r\n        },\r\n        {\r\n          \"__type\": \"Bloom\",\r\n          \"BloomColor\": {\r\n            \"color\": [\r\n              {\r\n                \"c\": \"1,1,1,1\"\r\n              },\r\n              {\r\n                \"t\": 1,\r\n                \"c\": \"1,1,1,1\"\r\n              }\r\n            ],\r\n            \"alpha\": []\r\n          },\r\n          \"BloomCurve\": [\r\n            {\r\n              \"y\": 0.5\r\n            },\r\n            {\r\n              \"x\": 1,\r\n              \"y\": 1\r\n            }\r\n          ],\r\n          \"Mode\": \"Additive\",\r\n          \"Strength\": 0.5,\r\n          \"Threshold\": 0.5,\r\n          \"ThresholdWidth\": 0.5\r\n        },\r\n        {\r\n          \"__type\": \"Tonemapping\",\r\n          \"ExposureCompensation\": 0,\r\n          \"MaximumExposure\": 2,\r\n          \"MinimumExposure\": 1,\r\n          \"Rate\": 1\r\n        },\r\n        {\r\n          \"__type\": \"Sharpen\",\r\n          \"Scale\": 0.3\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"Id\": \"5855d12c-9346-48ba-9ae7-fa7bb2c9080b\",\r\n      \"Name\": \"Cube\",\r\n      \"Position\": \"160,480,32\",\r\n      \"Scale\": \"20,1,1\",\r\n      \"Enabled\": true,\r\n      \"Components\": [\r\n        {\r\n          \"__type\": \"ModelRenderer\",\r\n          \"BodyGroups\": 18446744073709551615,\r\n          \"MaterialGroup\": null,\r\n          \"MaterialOverride\": null,\r\n          \"Model\": \"models/dev/box.vmdl\",\r\n          \"RenderType\": \"On\",\r\n          \"Tint\": \"1,1,1,1\"\r\n        },\r\n        {\r\n          \"__type\": \"BoxCollider\",\r\n          \"Center\": \"0,0,0\",\r\n          \"IsTrigger\": false,\r\n          \"Scale\": \"50,50,50\",\r\n          \"Static\": false,\r\n          \"Surface\": null\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"Id\": \"0ba2fd72-a08c-48a2-a700-8045976f8a45\",\r\n      \"Name\": \"Cube (1)\",\r\n      \"Position\": \"640,-0,32\",\r\n      \"Rotation\": \"0,0,-0.7071067,0.7071068\",\r\n      \"Scale\": \"20,1,1\",\r\n      \"Enabled\": true,\r\n      \"Components\": [\r\n        {\r\n          \"__type\": \"ModelRenderer\",\r\n          \"BodyGroups\": 18446744073709551615,\r\n          \"MaterialGroup\": null,\r\n          \"MaterialOverride\": null,\r\n          \"Model\": \"models/dev/box.vmdl\",\r\n          \"RenderType\": \"On\",\r\n          \"Tint\": \"1,1,1,1\"\r\n        },\r\n        {\r\n          \"__type\": \"BoxCollider\",\r\n          \"Center\": \"0,0,0\",\r\n          \"IsTrigger\": false,\r\n          \"Scale\": \"50,50,50\",\r\n          \"Static\": false,\r\n          \"Surface\": null\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"Id\": \"04502b4f-1270-4097-9996-ad80d7f6b3d2\",\r\n      \"Name\": \"bullet\",\r\n      \"Position\": \"-32.98802,-22.11693,80.49216\",\r\n      \"Scale\": \"0.25,0.25,0.25\",\r\n      \"Enabled\": true,\r\n      \"__Prefab\": \"prefab/bullet.prefab\"\r\n    }\r\n  ],\r\n  \"SceneProperties\": {\r\n    \"FixedUpdateFrequency\": 50,\r\n    \"Lerping\": true,\r\n    \"MaxFixedUpdates\": 5,\r\n    \"NetworkFrequency\": 60,\r\n    \"ThreadedAnimation\": true,\r\n    \"TimeScale\": 1,\r\n    \"UseFixedUpdate\": true,\r\n    \"NavMesh\": {\r\n      \"Enabled\": false,\r\n      \"IncludeStaticBodies\": true,\r\n      \"IncludeKeyframedBodies\": true,\r\n      \"EditorAutoUpdate\": true,\r\n      \"AgentHeight\": 64,\r\n      \"AgentRadius\": 16,\r\n      \"AgentStepSize\": 18,\r\n      \"AgentMaxSlope\": 40,\r\n      \"ExcludedBodies\": \"\",\r\n      \"IncludedBodies\": \"\"\r\n    }\r\n  },\r\n  \"Title\": \"minimal\",\r\n  \"Description\": \"\",\r\n  \"LastSaved\": \"2024-03-05T10:00:12.9107658-06:00\",\r\n  \"__references\": []\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/scenes/minimal.scene b/scenes/minimal.scene
+--- a/scenes/minimal.scene	(revision 364c9eef5c5a2a41c1a074ba753f63e307e800ed)
++++ b/scenes/minimal.scene	(date 1709655661953)
+@@ -281,6 +281,69 @@
+       "Scale": "0.25,0.25,0.25",
+       "Enabled": true,
+       "__Prefab": "prefab/bullet.prefab"
++    },
++    {
++      "Id": "dd95bf28-0f42-4212-8da1-f78d4926a857",
++      "Name": "Cube",
++      "Position": "332.1527,-42.58385,30.34818",
++      "Scale": "1,1,2.809003",
++      "Enabled": true,
++      "Components": [
++        {
++          "__type": "ModelRenderer",
++          "BodyGroups": 18446744073709551615,
++          "MaterialGroup": null,
++          "MaterialOverride": null,
++          "Model": "models/dev/box.vmdl",
++          "RenderType": "On",
++          "Tint": "0.24045,0.79535,0.24045,1"
++        },
++        {
++          "__type": "Enemy"
++        }
++      ]
++    },
++    {
++      "Id": "9cf322d5-2910-4bea-9127-82c27a64ec84",
++      "Name": "Cube (2)",
++      "Position": "332.1527,-233.3753,30.34818",
++      "Scale": "1,1,2.809003",
++      "Enabled": true,
++      "Components": [
++        {
++          "__type": "ModelRenderer",
++          "BodyGroups": 18446744073709551615,
++          "MaterialGroup": null,
++          "MaterialOverride": null,
++          "Model": "models/dev/box.vmdl",
++          "RenderType": "On",
++          "Tint": "0.24045,0.79535,0.24045,1"
++        },
++        {
++          "__type": "Enemy"
++        }
++      ]
++    },
++    {
++      "Id": "7b8051ab-ecd5-436d-bd58-a80e795401f9",
++      "Name": "Cube (3)",
++      "Position": "332.1527,-477.6294,30.34818",
++      "Scale": "1,1,2.809003",
++      "Enabled": true,
++      "Components": [
++        {
++          "__type": "ModelRenderer",
++          "BodyGroups": 18446744073709551615,
++          "MaterialGroup": null,
++          "MaterialOverride": null,
++          "Model": "models/dev/box.vmdl",
++          "RenderType": "On",
++          "Tint": "0.24045,0.79535,0.24045,1"
++        },
++        {
++          "__type": "Enemy"
++        }
++      ]
+     }
+   ],
+   "SceneProperties": {
+@@ -306,6 +369,6 @@
+   },
+   "Title": "minimal",
+   "Description": "",
+-  "LastSaved": "2024-03-05T10:00:12.9107658-06:00",
++  "LastSaved": "2024-03-05T10:21:01.9499181-06:00",
+   "__references": []
+ }
+\ No newline at end of file
