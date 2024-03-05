@@ -3,7 +3,7 @@ using Sandbox;
 
 public sealed class PlayerWeapons : Component
 {
-	public Weapon CurrentWeapon
+	[Property] public Weapon CurrentWeapon
 	{
 		get;
 		set;

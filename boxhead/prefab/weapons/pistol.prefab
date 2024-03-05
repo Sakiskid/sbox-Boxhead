@@ -1,0 +1,45 @@
+{
+  "RootObject": {
+    "Id": "fbbb4c35-ebff-4a68-af10-fc6bdd059bb8",
+    "Name": "w_usp",
+    "Position": "15,0,-15",
+    "Scale": "5,5,5",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Prop",
+        "Health": 0,
+        "IsStatic": false,
+        "Model": "models/weapons/sbox_pistol_usp/w_usp.vmdl",
+        "OnPropBreak": null,
+        "OnPropTakeDamage": null,
+        "ShowCreatedComponents": false
+      },
+      {
+        "__type": "Pistol",
+        "BulletExitPoint": {
+          "_type": "gameobject",
+          "go": "0dae78ac-9693-4787-aa91-a3d0883e7980"
+        },
+        "bulletPrefab": {
+          "_type": "gameobject",
+          "prefab": "prefab/bullet.prefab"
+        }
+      }
+    ],
+    "Children": [
+      {
+        "Id": "0dae78ac-9693-4787-aa91-a3d0883e7980",
+        "Name": "bullet exit point",
+        "Position": "10.1558,0,4.941743",
+        "Enabled": true
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": [
+    "facepunch.w_usp"
+  ]
+}

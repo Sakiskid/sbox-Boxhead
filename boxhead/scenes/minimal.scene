@@ -120,9 +120,10 @@
         },
         {
           "__type": "PlayerWeapons",
-          "bulletPrefab": {
-            "_type": "gameobject",
-            "prefab": "prefab/bullet.prefab"
+          "CurrentWeapon": {
+            "_type": "component",
+            "go": "fbbb4c35-ebff-4a68-af10-fc6bdd059bb8",
+            "component_type": "Pistol"
           }
         }
       ],
@@ -305,6 +306,6 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-03-05T09:49:54.1231527-06:00",
+  "LastSaved": "2024-03-05T10:00:12.9107658-06:00",
   "__references": []
 }
