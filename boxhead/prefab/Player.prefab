@@ -1,6 +1,6 @@
 {
   "RootObject": {
-    "Id": "dedc0646-c74d-463c-9f2e-d8db6295204b",
+    "Id": "9e657f8d-8c55-461e-9e38-3bc753e9ac85",
     "Name": "player",
     "Networked": true,
     "Enabled": true,
@@ -15,7 +15,7 @@
         ],
         "PlayerModelObj": {
           "_type": "gameobject",
-          "go": "fc5818f0-8f98-4193-94ce-7fb17fcf22f3"
+          "go": "5876b779-9c0b-4b70-9b13-06d607d369dc"
         }
       },
       {
@@ -56,14 +56,14 @@
         "__type": "PlayerWeapons",
         "CurrentWeapon": {
           "_type": "component",
-          "go": "196fc21a-0152-495f-b4aa-0f895aa733d9",
+          "go": "c5331937-e94f-4c69-b538-cb5113aa2320",
           "component_type": "Pistol"
         }
       }
     ],
     "Children": [
       {
-        "Id": "fc5818f0-8f98-4193-94ce-7fb17fcf22f3",
+        "Id": "5876b779-9c0b-4b70-9b13-06d607d369dc",
         "Name": "PlayerModel",
         "Position": "0.0000003001707,0.0000009364861,25",
         "Enabled": true,
@@ -83,10 +83,10 @@
         ],
         "Children": [
           {
-            "Id": "196fc21a-0152-495f-b4aa-0f895aa733d9",
-            "Name": "w_usp",
-            "Position": "15,0,-15",
-            "Scale": "5,5,5",
+            "Id": "c5331937-e94f-4c69-b538-cb5113aa2320",
+            "Name": "pistol (1)",
+            "Position": "35.36165,-0.0000009364861,2.225012",
+            "Scale": "1,0.2,0.2",
             "Enabled": true,
             "__Prefab": "prefab/weapons/pistol.prefab"
           }

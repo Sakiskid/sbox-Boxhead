@@ -8,7 +8,7 @@ namespace Sandbox.Entities
 
 		protected override void OnStart()
 		{
-			ColorIndex = Game.Random.Int( 0, Colors.Count );
+			ColorIndex = Game.Random.Int( 0, Colors.Count - 1 );
 			PlayerModelObj.Components.Get<SkinnedModelRenderer>().Tint = Colors[ColorIndex];
 		}
 

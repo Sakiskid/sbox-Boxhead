@@ -10,11 +10,13 @@ public sealed class PlayerPhysics : Component
 
 	[Property] private Vector3 inputDir;
 
+	private Rigidbody rb;
 	private CharacterController charCont;
 
 	protected override void OnStart()
 	{
 		charCont = this.GameObject.Components.Get<CharacterController>();
+		rb = GameObject.Components.Get<Rigidbody>();
 	}
 
 	protected override void OnFixedUpdate()
@@ -27,6 +29,10 @@ public sealed class PlayerPhysics : Component
 
 	private void Move()
 	{
+		if ( IsProxy ) return;
+
+		rb.Velocity = 0;
+		rb.AngularVelocity = Vector3.Zero;
 		Vector3 finalVelocity = Vector3.Zero;
 
 		// Input Direction

@@ -3,12 +3,15 @@ using Sandbox;
 using Sandbox.Diagnostics;
 using Sandbox.Entities;
 
+[Icon( "🤢" )]
 public abstract class Enemy : Component, IDamageable
 {
 	internal Logger Log = new Logger( "Enemy: " );
 	
 	[Property] public float Health { get; set; }
 	[Property] internal NavMeshAgent Agent { get; set; }
+	
+	[Sync][Property] public Vector3 SyncedPosition { get; internal set; }
 	
 	internal float intervalBetweenCheckingTargetPosition;
 	internal Vector2 checkTargetPositionRange = new Vector2( 0.5f, 2f );
@@ -21,8 +24,22 @@ public abstract class Enemy : Component, IDamageable
 	
 	protected override void OnStart()
 	{
+		base.OnStart();
 		intervalBetweenCheckingTargetPosition = Game.Random.Float( checkTargetPositionRange.x, checkTargetPositionRange.y );
 		_ = CheckAndUpdateTarget();
+	}
+
+	protected override void OnUpdate()
+	{
+		base.OnUpdate();
+		if ( Networking.IsHost )
+		{
+			SyncedPosition = Transform.Position;
+		}
+		else
+		{
+			Transform.Position = SyncedPosition;
+		}
 	}
 
 	internal async Task CheckAndUpdateTarget()

@@ -8,9 +8,15 @@
     <projectFile profileName="Action Graph">Z:/SteamLibrary/steamapps/common/sbox/editor/ActionGraph/Action Graph.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6afeb92f-fcbc-45be-ac45-ef157c039ade" name="Changes" comment="enemy updating movetarget randomly">
+    <list default="true" id="6afeb92f-fcbc-45be-ac45-ef157c039ade" name="Changes" comment="player rotation is synced">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.boxhead/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.boxhead/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Entities/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entities/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Entities/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entities/Enemies/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Entities/PlayerInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entities/PlayerInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Entities/PlayerPhysics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entities/PlayerPhysics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prefab/Enemies/Zombo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/prefab/Enemies/Zombo.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/prefab/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prefab/weapons/pistol.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/prefab/weapons/pistol.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/minimal.scene" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/minimal.scene" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +145,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709564979539</updated>
       <workItem from="1709564984507" duration="12598000" />
-      <workItem from="1709650501097" duration="9217000" />
+      <workItem from="1709650501097" duration="12555000" />
     </task>
     <task id="LOCAL-00001" summary="adds weapon code">
       <created>1709654005534</created>
@@ -211,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709659425982</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="player rotation is synced">
+      <created>1709660212463</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709660212463</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +272,7 @@
     <MESSAGE value="zombo tracks and moves towards player" />
     <MESSAGE value="add zombie spawner" />
     <MESSAGE value="enemy updating movetarget randomly" />
-    <option name="LAST_COMMIT_MESSAGE" value="enemy updating movetarget randomly" />
+    <MESSAGE value="player rotation is synced" />
+    <option name="LAST_COMMIT_MESSAGE" value="player rotation is synced" />
   </component>
 </project>

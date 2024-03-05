@@ -1,16 +1,15 @@
 {
   "RootObject": {
-    "Id": "fbbb4c35-ebff-4a68-af10-fc6bdd059bb8",
-    "Name": "w_usp",
-    "Position": "15,0,-15",
-    "Scale": "5,5,5",
+    "Id": "69ed244e-d943-4fa3-a57b-e8ac9737c340",
+    "Name": "pistol",
+    "Scale": "1,0.2,0.2",
     "Enabled": true,
     "Components": [
       {
         "__type": "Prop",
         "Health": 0,
         "IsStatic": false,
-        "Model": "models/weapons/sbox_pistol_usp/w_usp.vmdl",
+        "Model": "models/dev/box.vmdl",
         "OnPropBreak": null,
         "OnPropTakeDamage": null,
         "ShowCreatedComponents": false
@@ -19,7 +18,7 @@
         "__type": "Pistol",
         "BulletExitPoint": {
           "_type": "gameobject",
-          "go": "0dae78ac-9693-4787-aa91-a3d0883e7980"
+          "go": "e05d7b78-25f8-44fe-85d1-11891b192982"
         },
         "bulletPrefab": {
           "_type": "gameobject",
@@ -29,9 +28,9 @@
     ],
     "Children": [
       {
-        "Id": "0dae78ac-9693-4787-aa91-a3d0883e7980",
+        "Id": "e05d7b78-25f8-44fe-85d1-11891b192982",
         "Name": "bullet exit point",
-        "Position": "10.1558,0,4.941743",
+        "Position": "25.64231,0,4.941743",
         "Enabled": true
       }
     ]
@@ -39,7 +38,5 @@
   "ShowInMenu": false,
   "MenuPath": null,
   "MenuIcon": null,
-  "__references": [
-    "facepunch.w_usp"
-  ]
+  "__references": []
 }

@@ -1,5 +1,6 @@
 using System;
 using System.Diagnostics;
+using System.Threading.Tasks;
 using Sandbox;
 using Sandbox.Diagnostics;
 using Sandbox.Entities.Enemies;
@@ -10,6 +11,12 @@ public sealed class Bullet : Component, Component.ICollisionListener
 	
 	[Property] public float Speed { get; set; }
 	[Property] public float Damage { get; set; }
+
+	protected override void OnStart()
+	{
+		base.OnStart();
+		_ = StartExpireTimer();
+	}
 
 	protected override void OnUpdate()
 	{
@@ -40,5 +47,11 @@ public sealed class Bullet : Component, Component.ICollisionListener
 	public void OnCollisionStop( CollisionStop other )
 	{
 		return;
+	}
+
+	private async Task StartExpireTimer()
+	{
+		await Task.DelaySeconds( 5 );
+		GameObject.Destroy();
 	}
 }
