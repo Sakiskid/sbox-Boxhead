@@ -194,7 +194,34 @@
     {
       "Id": "3cdc0e88-2f1d-49f5-ac30-6d5794dd6180",
       "Name": "Cube (2)",
-      "Position": "224,-31.99996,32.00003",
+      "Position": "223.9999,110.4203,32.00003",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Scale": "20,1,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "e79bdd51-574e-47c6-a2a5-6e36f4bc6406",
+      "Name": "Cube (10)",
+      "Position": "223.9999,334.4342,32.00003",
       "Rotation": "0,0,-0.7071067,0.7071068",
       "Scale": "20,1,1",
       "Enabled": true,
@@ -221,34 +248,7 @@
     {
       "Id": "05928686-eb2e-45d1-bf61-6fd40ee15b31",
       "Name": "Cube (9)",
-      "Position": "224.0001,-707.604,32.00003",
-      "Rotation": "0,0,-0.7071067,0.7071068",
-      "Scale": "20,1,1",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "BoxCollider",
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false,
-          "Surface": null
-        }
-      ]
-    },
-    {
-      "Id": "720217aa-3dde-437a-b981-8bace5672b0e",
-      "Name": "Cube (10)",
-      "Position": "223.9998,685.8613,32.00003",
+      "Position": "224.0001,-1016.609,32.00003",
       "Rotation": "0,0,-0.7071067,0.7071068",
       "Scale": "20,1,1",
       "Enabled": true,
@@ -275,8 +275,62 @@
     {
       "Id": "4391cd8d-7005-46ba-88d5-cb4ea1994c67",
       "Name": "Cube (3)",
-      "Position": "-128,-160,32.00004",
+      "Position": "-127.9999,-312.1976,32.00004",
       "Rotation": "0,0,-0.7071067,0.7071068",
+      "Scale": "20,1,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "d565e562-bd26-418e-a8b1-66068002c61b",
+      "Name": "Cube (11)",
+      "Position": "-418.8134,189.852,32.00006",
+      "Rotation": "0,0,-0.9999999,0.0000001490116",
+      "Scale": "20,1,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "85864c3f-8a18-4b2e-b082-076183292eef",
+      "Name": "Cube (12)",
+      "Position": "834.7929,-420.1337,31.99998",
+      "Rotation": "0,0,-0.8660254,-0.4999998",
       "Scale": "20,1,1",
       "Enabled": true,
       "Components": [
@@ -540,6 +594,6 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-03-05T14:44:48.4095217-06:00",
+  "LastSaved": "2024-03-05T14:49:13.0553816-06:00",
   "__references": []
 }

@@ -1,6 +1,6 @@
 {
   "RootObject": {
-    "Id": "08df72ae-2422-4d2b-aed9-fd1a27309881",
+    "Id": "120a15bf-638a-435a-83f7-6ccff35166a5",
     "Name": "zombo",
     "Scale": "1,1,2.179531",
     "Networked": true,
@@ -19,7 +19,7 @@
         "__type": "Zombo",
         "Agent": {
           "_type": "component",
-          "go": "08df72ae-2422-4d2b-aed9-fd1a27309881",
+          "go": "120a15bf-638a-435a-83f7-6ccff35166a5",
           "component_type": "NavMeshAgent"
         },
         "Health": 20,
@@ -40,7 +40,7 @@
         "MaxSpeed": 160,
         "Radius": 16,
         "Separation": 0.25,
-        "UpdatePosition": false,
+        "UpdatePosition": true,
         "UpdateRotation": false
       }
     ],

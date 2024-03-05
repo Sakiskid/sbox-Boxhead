@@ -8,10 +8,7 @@
     <projectFile profileName="Action Graph">Z:/SteamLibrary/steamapps/common/sbox/editor/ActionGraph/Action Graph.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6afeb92f-fcbc-45be-ac45-ef157c039ade" name="Changes" comment="replace gun with box">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.boxhead/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.boxhead/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Entities/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entities/Enemies/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Entities/EnemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entities/EnemySpawner.cs" afterDir="false" />
+    <list default="true" id="6afeb92f-fcbc-45be-ac45-ef157c039ade" name="Changes" comment="fix zombie network sync">
       <change beforePath="$PROJECT_DIR$/prefab/Enemies/Zombo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/prefab/Enemies/Zombo.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/minimal.scene" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/minimal.scene" afterDir="false" />
     </list>
@@ -35,6 +32,7 @@
     <setting file="mock://C:/Users/tyler/OneDrive/Documents/s&amp;box projects/sbox-Boxhead/boxhead/prefab/bullet.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/47bf7d08ff6240d7a9b069cc75daaa7b133c00/9f/3ba5cbd7/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d5c748b47d0e45c7a98fce1ad75f82b723bc00/a0/90fab39f/Input.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/tyler/OneDrive/Documents/s&amp;box projects/sbox-Boxhead/boxhead/code/Entities/Enemies/Enemy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/tyler/OneDrive/Documents/s&amp;box projects/sbox-Boxhead/boxhead/code/Entities/Bullet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cd3380a0f9f04a0090b2fab86df026ca133800/70/d28d216e/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8c949c16adf34049888a318cb1262de75e200/5b/a787574d/ActionGraphNodeAttribute.cs" root0="FORCE_HIGHLIGHTING" />
@@ -142,7 +140,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709564979539</updated>
       <workItem from="1709564984507" duration="12598000" />
-      <workItem from="1709650501097" duration="13297000" />
+      <workItem from="1709650501097" duration="13707000" />
     </task>
     <task id="LOCAL-00001" summary="adds weapon code">
       <created>1709654005534</created>
@@ -228,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709670818513</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix zombie network sync">
+      <created>1709671495668</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709671495668</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +283,7 @@
     <MESSAGE value="enemy updating movetarget randomly" />
     <MESSAGE value="player rotation is synced" />
     <MESSAGE value="replace gun with box" />
-    <option name="LAST_COMMIT_MESSAGE" value="replace gun with box" />
+    <MESSAGE value="fix zombie network sync" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix zombie network sync" />
   </component>
 </project>
