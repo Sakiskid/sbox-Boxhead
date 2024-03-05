@@ -8,10 +8,8 @@
     <projectFile profileName="Action Graph">Z:/SteamLibrary/steamapps/common/sbox/editor/ActionGraph/Action Graph.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6afeb92f-fcbc-45be-ac45-ef157c039ade" name="Changes" comment="fix zombie pathing">
-      <change beforePath="$PROJECT_DIR$/.sbproj" beforeDir="false" afterPath="$PROJECT_DIR$/.sbproj" afterDir="false" />
+    <list default="true" id="6afeb92f-fcbc-45be-ac45-ef157c039ade" name="Changes" comment="fix player shooting sync">
       <change beforePath="$PROJECT_DIR$/code/Entities/PlayerWeapons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entities/PlayerWeapons.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/minimal.scene" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/minimal.scene" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +139,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709564979539</updated>
       <workItem from="1709564984507" duration="12598000" />
-      <workItem from="1709650501097" duration="14420000" />
+      <workItem from="1709650501097" duration="14735000" />
     </task>
     <task id="LOCAL-00001" summary="adds weapon code">
       <created>1709654005534</created>
@@ -241,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709671763544</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix player shooting sync">
+      <created>1709673190766</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1709673190766</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +298,7 @@
     <MESSAGE value="replace gun with box" />
     <MESSAGE value="fix zombie network sync" />
     <MESSAGE value="fix zombie pathing" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix zombie pathing" />
+    <MESSAGE value="fix player shooting sync" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix player shooting sync" />
   </component>
 </project>

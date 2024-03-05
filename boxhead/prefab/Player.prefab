@@ -1,6 +1,6 @@
 {
   "RootObject": {
-    "Id": "9e657f8d-8c55-461e-9e38-3bc753e9ac85",
+    "Id": "4964a720-559c-494a-97e8-22c6862fc6b2",
     "Name": "player",
     "Networked": true,
     "Enabled": true,
@@ -15,7 +15,7 @@
         ],
         "PlayerModelObj": {
           "_type": "gameobject",
-          "go": "5876b779-9c0b-4b70-9b13-06d607d369dc"
+          "go": "e9ac0834-ecec-4b7e-8271-9d3872c7967b"
         }
       },
       {
@@ -54,16 +54,16 @@
       },
       {
         "__type": "PlayerWeapons",
-        "CurrentWeapon": {
-          "_type": "component",
-          "go": "c5331937-e94f-4c69-b538-cb5113aa2320",
-          "component_type": "Pistol"
-        }
+        "PistolObject": {
+          "_type": "gameobject",
+          "go": "ebd49e52-a02b-4d75-88ef-ef861a0fc6a9"
+        },
+        "CurrentWeapon": null
       }
     ],
     "Children": [
       {
-        "Id": "5876b779-9c0b-4b70-9b13-06d607d369dc",
+        "Id": "e9ac0834-ecec-4b7e-8271-9d3872c7967b",
         "Name": "PlayerModel",
         "Position": "0.0000003001707,0.0000009364861,25",
         "Enabled": true,
@@ -83,7 +83,7 @@
         ],
         "Children": [
           {
-            "Id": "c5331937-e94f-4c69-b538-cb5113aa2320",
+            "Id": "ebd49e52-a02b-4d75-88ef-ef861a0fc6a9",
             "Name": "pistol (1)",
             "Position": "35.36165,-0.0000009364861,2.225012",
             "Scale": "1,0.2,0.2",
