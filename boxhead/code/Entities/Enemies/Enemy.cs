@@ -29,19 +29,6 @@ public abstract class Enemy : Component, IDamageable
 		_ = CheckAndUpdateTarget();
 	}
 
-	protected override void OnUpdate()
-	{
-		base.OnUpdate();
-		if ( Networking.IsHost )
-		{
-			SyncedPosition = Transform.Position;
-		}
-		else
-		{
-			Transform.Position = SyncedPosition;
-		}
-	}
-
 	internal async Task CheckAndUpdateTarget()
 	{
 		while ( true )

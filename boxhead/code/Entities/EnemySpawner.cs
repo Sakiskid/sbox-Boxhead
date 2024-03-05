@@ -10,6 +10,7 @@ public sealed class EnemySpawner : Component
 	
 	protected override void OnStart()
 	{
+		if (Networking.IsHost)
 		_ = StartSpawning();
 	}
 	
@@ -27,7 +28,8 @@ public sealed class EnemySpawner : Component
 		if ( EnemyToSpawnPrefab != null && currentEnemies < MaxEnemiesAtOnce)
 		{
 			currentEnemies++;
-			EnemyToSpawnPrefab.Clone( Transform.Position );
+			var newEnemy = EnemyToSpawnPrefab.Clone( Transform.Position );
+			newEnemy.NetworkSpawn();
 		}
 	}
 }
