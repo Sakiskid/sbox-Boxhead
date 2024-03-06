@@ -8,13 +8,11 @@
     <projectFile profileName="Action Graph">Z:/SteamLibrary/steamapps/common/sbox/editor/ActionGraph/Action Graph.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6afeb92f-fcbc-45be-ac45-ef157c039ade" name="Changes" comment="">
+    <list default="true" id="6afeb92f-fcbc-45be-ac45-ef157c039ade" name="Changes" comment="add UI and display player weapon friendlyname">
+      <change afterPath="$PROJECT_DIR$/code/UI/Util/SboxSassMixins.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.boxhead/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.boxhead/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Entities/PlayerWeapons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entities/PlayerWeapons.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Entities/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entities/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Entities/Weapons/Pistol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entities/Weapons/Pistol.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/prefab/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/minimal.scene" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/minimal.scene" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/UI/PlayerHud.razor" beforeDir="false" afterPath="$PROJECT_DIR$/code/UI/PlayerHud.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/UI/PlayerHud.razor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/code/UI/PlayerHud.razor.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +139,7 @@
       <updated>1709564979539</updated>
       <workItem from="1709564984507" duration="12598000" />
       <workItem from="1709650501097" duration="15138000" />
-      <workItem from="1709699233948" duration="640000" />
+      <workItem from="1709699233948" duration="1270000" />
     </task>
     <task id="LOCAL-00001" summary="adds weapon code">
       <created>1709654005534</created>
@@ -255,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709673689705</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add UI and display player weapon friendlyname">
+      <created>1709699908877</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1709699908877</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,6 +314,7 @@
     <MESSAGE value="fix zombie pathing" />
     <MESSAGE value="fix player shooting sync" />
     <MESSAGE value="some weird issue with tasks, but restarting resolved" />
-    <option name="LAST_COMMIT_MESSAGE" value="some weird issue with tasks, but restarting resolved" />
+    <MESSAGE value="add UI and display player weapon friendlyname" />
+    <option name="LAST_COMMIT_MESSAGE" value="add UI and display player weapon friendlyname" />
   </component>
 </project>
