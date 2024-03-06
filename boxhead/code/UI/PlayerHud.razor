@@ -1,0 +1,24 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div class="weapons">
+		<p>@PlayerWeapons.CurrentWeapon.FriendlyName</p>
+	</div>
+</root>
+
+@code
+{
+	[Property] PlayerWeapons PlayerWeapons { get; set; }
+
+	
+	
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash()
+	{
+		return System.HashCode.Combine(PlayerWeapons.CurrentWeapon);
+	}
+}

@@ -8,8 +8,13 @@
     <projectFile profileName="Action Graph">Z:/SteamLibrary/steamapps/common/sbox/editor/ActionGraph/Action Graph.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6afeb92f-fcbc-45be-ac45-ef157c039ade" name="Changes" comment="fix player shooting sync">
+    <list default="true" id="6afeb92f-fcbc-45be-ac45-ef157c039ade" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.boxhead/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.boxhead/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Entities/PlayerWeapons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entities/PlayerWeapons.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Entities/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entities/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Entities/Weapons/Pistol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entities/Weapons/Pistol.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/prefab/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/minimal.scene" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/minimal.scene" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,16 +33,12 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/tyler/OneDrive/Documents/s&amp;box projects/sbox-Boxhead/boxhead/prefab/bullet.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/47bf7d08ff6240d7a9b069cc75daaa7b133c00/9f/3ba5cbd7/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d5c748b47d0e45c7a98fce1ad75f82b723bc00/a0/90fab39f/Input.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/tyler/OneDrive/Documents/s&amp;box projects/sbox-Boxhead/boxhead/code/Entities/Enemies/Enemy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/tyler/OneDrive/Documents/s&amp;box projects/sbox-Boxhead/boxhead/code/Entities/Bullet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cd3380a0f9f04a0090b2fab86df026ca133800/70/d28d216e/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8c949c16adf34049888a318cb1262de75e200/5b/a787574d/ActionGraphNodeAttribute.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/80fe8929972449e89bbcb18446e665405e200/73/846cf87e/SandboxSystemExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/80fe8929972449e89bbcb18446e665405e200/73/846cf87e/SandboxSystemExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8c949c16adf34049888a318cb1262de75e200/a8/9c69b290/Rotation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/tyler/OneDrive/Documents/s&amp;box projects/sbox-Boxhead/boxhead/code/Entities/Enemies/Enemy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cd3380a0f9f04a0090b2fab86df026ca133800/2c/daba29d2/GameTransform.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2dEEkDQCTdChGiXzr2KE6EybsSO" />
@@ -139,7 +140,8 @@
       <option name="presentableId" value="Default" />
       <updated>1709564979539</updated>
       <workItem from="1709564984507" duration="12598000" />
-      <workItem from="1709650501097" duration="14735000" />
+      <workItem from="1709650501097" duration="15138000" />
+      <workItem from="1709699233948" duration="640000" />
     </task>
     <task id="LOCAL-00001" summary="adds weapon code">
       <created>1709654005534</created>
@@ -246,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709673190766</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="some weird issue with tasks, but restarting resolved">
+      <created>1709673689705</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1709673689705</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +308,7 @@
     <MESSAGE value="fix zombie network sync" />
     <MESSAGE value="fix zombie pathing" />
     <MESSAGE value="fix player shooting sync" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix player shooting sync" />
+    <MESSAGE value="some weird issue with tasks, but restarting resolved" />
+    <option name="LAST_COMMIT_MESSAGE" value="some weird issue with tasks, but restarting resolved" />
   </component>
 </project>

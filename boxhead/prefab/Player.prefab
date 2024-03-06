@@ -1,6 +1,6 @@
 {
   "RootObject": {
-    "Id": "4964a720-559c-494a-97e8-22c6862fc6b2",
+    "Id": "ee66b3f2-2978-460a-9228-ea4fbe42e528",
     "Name": "player",
     "Networked": true,
     "Enabled": true,
@@ -15,7 +15,7 @@
         ],
         "PlayerModelObj": {
           "_type": "gameobject",
-          "go": "e9ac0834-ecec-4b7e-8271-9d3872c7967b"
+          "go": "3794d029-2d95-4be0-8e13-d40f5cef9491"
         }
       },
       {
@@ -56,14 +56,14 @@
         "__type": "PlayerWeapons",
         "PistolObject": {
           "_type": "gameobject",
-          "go": "ebd49e52-a02b-4d75-88ef-ef861a0fc6a9"
+          "go": "6941ea1a-a23b-4dbe-88c1-a748317204ce"
         },
         "CurrentWeapon": null
       }
     ],
     "Children": [
       {
-        "Id": "e9ac0834-ecec-4b7e-8271-9d3872c7967b",
+        "Id": "3794d029-2d95-4be0-8e13-d40f5cef9491",
         "Name": "PlayerModel",
         "Position": "0.0000003001707,0.0000009364861,25",
         "Enabled": true,
@@ -83,12 +83,35 @@
         ],
         "Children": [
           {
-            "Id": "ebd49e52-a02b-4d75-88ef-ef861a0fc6a9",
+            "Id": "6941ea1a-a23b-4dbe-88c1-a748317204ce",
             "Name": "pistol (1)",
             "Position": "35.36165,-0.0000009364861,2.225012",
             "Scale": "1,0.2,0.2",
             "Enabled": true,
             "__Prefab": "prefab/weapons/pistol.prefab"
+          }
+        ]
+      },
+      {
+        "Id": "d89c264a-cd54-4241-840f-14f9b2d3785b",
+        "Name": "Player UI",
+        "Position": "-879.6083,49.42689,1241.298",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "ScreenPanel",
+            "AutoScreenScale": true,
+            "Opacity": 1,
+            "Scale": 1,
+            "ZIndex": 100
+          },
+          {
+            "__type": "PlayerHud",
+            "PlayerWeapons": {
+              "_type": "component",
+              "go": "ee66b3f2-2978-460a-9228-ea4fbe42e528",
+              "component_type": "PlayerWeapons"
+            }
           }
         ]
       }

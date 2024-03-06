@@ -15,5 +15,10 @@ public abstract class Weapon : Component
 		set;
 	}
 
+	/// <summary>
+	/// The name that is displayed to the player
+	/// </summary>
+	public abstract string FriendlyName { get; }
+
 	public abstract void Shoot();
 }

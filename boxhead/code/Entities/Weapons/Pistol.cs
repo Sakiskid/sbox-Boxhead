@@ -5,6 +5,8 @@ namespace Sandbox.Entities.Weapons
 		[Property] public override GameObject BulletExitPoint { get; set; }
 		[Property] public override GameObject bulletPrefab { get; set; }
 
+		public override string FriendlyName { get { return "Pistol"; } }
+
 		public override void Shoot()
 		{
 			var bulletClone = bulletPrefab.Clone( BulletExitPoint.Transform.Position );

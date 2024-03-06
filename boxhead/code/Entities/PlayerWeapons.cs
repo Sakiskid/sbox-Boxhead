@@ -14,7 +14,7 @@ public sealed class PlayerWeapons : Component
 	protected override void OnStart()
 	{
 		CurrentWeapon = PistolObject.Components.Get<Weapon>();
-		_ = StartShooting();
+		// _ = StartShooting();
 	}
 
 	protected override void OnUpdate()
